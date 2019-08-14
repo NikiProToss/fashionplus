@@ -1,12 +1,69 @@
 * {
   max-width: 100vw;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
- 
- /* 25% for 4 in a row and 46% for 2 in a row */
+
+
+
+/* Not mobile */
+@media screen and (min-width: 769px) {
+  .column.with-height {
+    padding-top: 50%;
+  }
+  #main .with-height {
+    padding-top: 46%;
+  }
+  .google-maps {
+    max-width: 70vw!important;
+    padding-bottom: 40%!important;
+  }
+  #tours > h2 {
+    max-width: 70vw!important;
+    font-size: 4rem!important;
+    letter-spacing: 20px;
+  }
+}
+
+
+/* section 2 */
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; /* This is the aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#tours > h2 {
+  text-transform: uppercase;
+  background: #000000a6;
+  color: #dedb1b;
+  max-width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 20px;
+}
+
+
+
+
+/* Section 3-4 */
+
+
+/* 25% for 4 in a row and 46% for 2 in a row */
 .column.with-height {
-  padding-top: 46%; 
+  padding-top: 46%;
   position: relative;
   background-position: center;
 }
@@ -27,24 +84,6 @@
 #services {
   margin-top: 11px;
 }
-
-@media screen and (min-width: 769px) {
-  .column.with-height {
-    padding-top: 50%;
-  }
-  #main .with-height {
-    padding-top: 46%;
-  }
-}
-
-
-
-
-
-
-
-
-
 
 .columns {
   overflow: hidden;
@@ -75,12 +114,12 @@ img {
 
 h3 {
   color: #755b5b;
-    font-weight: 400;
-    padding: 5px 10px;
-    background: #ffffffab;
-    letter-spacing: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    line-height: 1.125;
-    font-size: 2rem;
+  font-weight: 400;
+  padding: 5px 10px;
+  background: #ffffffab;
+  letter-spacing: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  line-height: 1.125;
+  font-size: 2rem;
 }
