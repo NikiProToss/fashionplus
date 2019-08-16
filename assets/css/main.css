@@ -4,8 +4,6 @@
   padding: 0;
 }
 
-
-
 /* Not mobile */
 @media screen and (min-width: 769px) {
   .column.with-height {
@@ -15,16 +13,15 @@
     padding-top: 46%;
   }
   .google-maps {
-    max-width: 70vw!important;
-    padding-bottom: 40%!important;
+    max-width: 70vw !important;
+    padding-bottom: 40% !important;
   }
   #tours > h2 {
-    max-width: 70vw!important;
-    font-size: 4rem!important;
+    max-width: 70vw !important;
+    font-size: 4rem !important;
     letter-spacing: 20px;
   }
 }
-
 
 /* section 2 */
 
@@ -55,11 +52,7 @@
   letter-spacing: 20px;
 }
 
-
-
-
 /* Section 3-4 */
-
 
 /* 25% for 4 in a row and 46% for 2 in a row */
 .column.with-height {
@@ -126,11 +119,10 @@ h3 {
   font-size: 2rem;
 }
 
-
 /* Slogan */
 
 #slogan {
-  background-color: #0000007a
+  background-color: #0000007a;
 }
 
 #slogan h2 {
@@ -140,11 +132,16 @@ h3 {
   letter-spacing: 5px;
 }
 
-/* Section 7 */
+/* Section 5 */
 
 #spectialists img {
   border-radius: 50%;
   border: 20px solid;
+}
+
+#spectialists {
+  background-position: top right 150px;
+  background-repeat-x: no-repeat;
 }
 
 #spectialists > h2 {
@@ -164,4 +161,10 @@ h3 {
 
 #spectialists p {
   text-align: left;
+}
+
+/* Section 9 */
+
+#appointment {
+  color: white;
 }
