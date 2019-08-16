@@ -83,8 +83,6 @@
 
 #services {
   margin: 11px 0;
-  background-image: url(/image/Repeated\ Background.jpg);
-  
   background-position: top right 150px;
   background-repeat-x: no-repeat;
 }
