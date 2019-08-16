@@ -23,6 +23,15 @@
   }
 }
 
+/* Navbar */
+.navbar {
+  background:transparent;
+}
+
+.navbar .navbar-item {
+  color: white;
+}
+
 /* section 2 */
 
 .google-maps {
@@ -78,6 +87,7 @@
   margin: 11px 0;
   background-position: top right 150px;
   background-repeat-x: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .columns {
@@ -142,6 +152,7 @@ h3 {
 #spectialists {
   background-position: top right 150px;
   background-repeat-x: no-repeat;
+  background-repeat: repeat-y;
 }
 
 #spectialists > h2 {
