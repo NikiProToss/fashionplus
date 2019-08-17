@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Not mobile */
 @media screen and (min-width: 769px) {
   .column.with-height {
@@ -64,6 +68,57 @@
 /* Section 3-4 */
 
 /* 25% for 4 in a row and 46% for 2 in a row */
+
+#main img {
+  z-index: -1;
+  width: 100%;
+}
+
+#main h2 {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  max-width: 90%;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  color: inherit;
+  background: #3a3a3a7a;
+  border-radius: 15px;
+}
+
+#main .column:hover + .column {
+  filter: brightness(0.5)!important;
+  color: transparent!important;
+}
+
+#main .column {
+  filter: brightness(1);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#main:hover .column {
+  filter: brightness(0.5);
+  color: transparent;
+}
+
+#main .column:hover,
+#main .column:hover ~ .column {
+  filter: brightness(1);
+  color: white;
+}
+
+
+#main .column {
+  padding: 0;
+  position: relative;
+}
+
 .column.with-height {
   padding-top: 46%;
   position: relative;
@@ -242,7 +297,7 @@ h3 {
   border: none;
   padding: 6px 18px;
   cursor: pointer;
-  transition: all 0.5s ease-in; 
+  transition: all 0.3s ease-in; 
 }
 
 #appointment option {
@@ -260,10 +315,65 @@ h3 {
   color: white;
   border-width: 2px;
 }
-
-/* Section 9 */
-
 #appointment {
   color: white;
 }
 
+
+/* Contacts 9 */
+
+#contacts h2 {
+  margin-bottom: 20px;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+#contacts h3 {
+  color: #755b5b;
+  font-weight: 400;
+  padding: 5px 10px;
+  background: #ffffffab;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  line-height: 1.125;
+  font-size: 3rem;
+}
+
+#contacts .icon {
+  font-size: 3rem;
+  color: red;
+} 
+
+#contacts a {    
+  display: block;
+  margin-top: 20px;
+  border-radius: 30px;
+  background: #0000005c;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  cursor: pointer;
+  width: 75%;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  transition: all 0.3s ease-in; 
+}
+
+#contacts a:hover {
+  color: #c30d2c;
+  background-color: #00000024;
+}
+
+#contacts p {
+  margin-bottom: 5px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+#contacts .icons .icon {
+  margin-left: 15px;
+}
+
+
+/* #contacts {
+  background-image: url(image/Fifth-screen.jpg);
+} */
