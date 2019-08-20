@@ -1,4 +1,7 @@
-const firstMain = document.querySelector('#main .column:nth-child(1)');
-const secondMain = document.querySelector('#main .column:nth-child(2)');
+const tourButton = document.getElementById("tourControl");
+const tourMedia = document.getElementById("myTour");
 
-firstMain.addEventListener("click", () => console.log("Hello World!"));
+tourButton.addEventListener("click", () => {
+    tourMedia.setAttribute("src", tourMedia.getAttribute("data-src"));
+    tourMedia.style.display = 'block';
+});

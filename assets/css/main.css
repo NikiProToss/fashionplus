@@ -73,7 +73,7 @@ html {
   #main .with-height {
     padding-top: 46%;
   }
-  .google-maps {
+  .tour {
     max-width: 70vw !important;
     padding-bottom: 40% !important;
   }
@@ -185,7 +185,7 @@ html {
 
 /* section 2 */
 
-.google-maps {
+.tour {
   position: relative;
   padding-bottom: 75%; /* This is the aspect ratio */
   height: 0;
@@ -193,12 +193,18 @@ html {
   max-width: 80vw;
   margin: 0 auto;
 }
-.google-maps iframe {
+
+#tours img {
+  cursor: pointer;
+}
+
+.tour iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
+  display: none;
 }
 
 #tours > h2 {
@@ -235,6 +241,10 @@ html {
   color: inherit;
   background: #3a3a3a7a;
   border-radius: 15px;
+}
+
+#main a {
+  color: white;
 }
 
 #main .column:hover + .column {
@@ -546,3 +556,11 @@ h3 {
 #specialists h3 {
   border-radius: 100px;
 }
+
+
+/* Services style and mechanics */
+
+#services input {
+  display: none;
+}
+
