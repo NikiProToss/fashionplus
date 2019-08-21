@@ -13,6 +13,17 @@ html {
   margin-right: 0px !important;
   margin-left: 0px !important;
 }
+h1 {
+  position: absolute;
+top: 40%;
+margin: 0 auto;
+display: block;
+width: 100vw;
+text-align: center;
+font-size: 4rem;
+color: #dbbc16;
+font-family: "Philosopher", sans-serif;
+}
 /* Mobile */
 @media screen and (max-width: 768px) {
   #hero {
@@ -20,9 +31,16 @@ html {
     background-image: url(../../image/Mobile_Maximum.jpg) !important;
     background-position: center;
   }
+  h1 {
+    top: 30%!important;
+    font-size: 3.5rem!important;
+  }
   #tours {
     background-image: url(../../image/Mobile-Maximum_2.jpg) !important;
     background-position: top center;
+  }
+  #tours h3 {
+    letter-spacing: 0;
   }
   #contacts a {
     margin: 20px auto !important;
@@ -84,6 +102,10 @@ html {
     background-image: url(../../image/Tab_Maximum.jpg);
     background-position: center;
   }
+  h1 {
+    top: 50%;
+    background: #000000bd;
+  }
   #tours {
     background-image: url(../../image/Tab-Maximum_2.jpg);
     background-position: top center;
@@ -116,7 +138,7 @@ html {
   #tours > h2 {
     max-width: 70vw !important;
     font-size: 4rem !important;
-    letter-spacing: 20px;
+    letter-spacing: 0!important;
   }
   #reviews p {
     margin-bottom: 20px;
