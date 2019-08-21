@@ -7,7 +7,12 @@
 html {
   scroll-behavior: smooth;
 }
-
+.columns {
+  margin-bottom: 0!important;
+  margin-top: 0!important;
+  margin-right: 0px!important;
+margin-left: 0px!important;
+}
 /* Mobile */
 @media screen and (max-width: 768px) {
   #contacts a {
@@ -223,7 +228,8 @@ html {
 /* 25% for 4 in a row and 46% for 2 in a row */
 
 #main img {
-  z-index: -1;
+  z-index: 1;
+  padding: 0;
   width: 100%;
 }
 
@@ -295,10 +301,11 @@ html {
 }
 
 #services {
-  margin: 11px 0;
+  margin: 0;
   background-position: top right 150px;
   background-repeat-x: no-repeat;
   background-repeat: repeat-y;
+  margin-top: -6.5px;
 }
 
 .columns {
@@ -559,6 +566,10 @@ h3 {
 }
 
 /* Services style and mechanics */
+
+#services .flex-reverse {
+  flex-direction: row-reverse;
+}
 #services .columns {
   position: relative;
 }
@@ -567,14 +578,19 @@ h3 {
 }
 #services .column {
   overflow: auto;
+  padding: 0;
+  z-index: 1;
 }
 /* Style container */
 #services .controls {
   position: absolute;
   left: 35%;
-  top: 5%;
+  bottom: 5%;
   z-index: 2;
-  transition: left 0.3s linear;
+  transition: left 0.3s ease-out;
+}
+#services .flex-reverse .controls {
+  left: 50%;
 }
 /* Style content */
 #services .serv-content {
@@ -599,7 +615,14 @@ h3 {
 }
 /* Style container when any is active */
 #services input.log-ctrl:checked ~ .controls {
-  left: 50%;
+  left: 48%;
+}
+#services .flex-reverse input.log-ctrl:checked ~ .controls {
+  left: 33%;
+}
+/* Style content container when any is active */
+#services input.log-ctrl:checked ~ .column:nth-of-type(2) {
+  background-color: #ffffffcf;
 }
 /* Style buttons when any is active */
 #services input.log-ctrl:checked ~ .controls label {
