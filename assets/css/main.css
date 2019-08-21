@@ -11,10 +11,19 @@ html {
   margin-bottom: 0!important;
   margin-top: 0!important;
   margin-right: 0px!important;
-margin-left: 0px!important;
+  margin-left: 0px!important;
 }
 /* Mobile */
 @media screen and (max-width: 768px) {
+  #hero {
+    height: 454px!important;
+    background-image: url(/image/Mobile_Maximum.jpg)!important; 
+    background-position: center;
+  }
+  #tours {
+    background-image: url(/image/Mobile-Maximum_2.jpg)!important;
+    background-position: top center;
+  }
   #contacts a {
     margin: 20px auto !important;
     letter-spacing: 2px !important;
@@ -67,6 +76,28 @@ margin-left: 0px!important;
   #slogan h2 {
     font-size: 2rem !important;
     letter-spacing: 0 !important;
+  }
+}
+@media screen and (max-width: 1299px) {
+  #hero {
+    height: 769px;
+    background-image: url(/image/Tab_Maximum.jpg); 
+    background-position: center;
+  }
+  #tours {
+    background-image: url(/image/Tab-Maximum_2.jpg);
+    background-position: top center;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #hero {
+    height: 1134px;
+    background-image: url(/image/Web_1920–1.jpg); 
+    background-position: center;
+  }
+  #tours {
+    background-image: url(/image/Web-1920-–-2.jpg);
+    background-position: top center;
   }
 }
 
@@ -198,7 +229,9 @@ margin-left: 0px!important;
   max-width: 80vw;
   margin: 0 auto;
 }
-
+#tours {
+  padding-top: 0;
+}
 #tours img {
   cursor: pointer;
 }
@@ -636,4 +669,8 @@ h3 {
 /* Functionality */
 #desc1:checked ~ .column #desc-content1,#price1:checked ~ .column #price-content1,#desc2:checked ~ .column #desc-content2,#price2:checked ~ .column #price-content2,#desc3:checked ~ .column #desc-content3,#price3:checked ~ .column #price-content3,#desc4:checked ~ .column #desc-content4,#price4:checked ~ .column #price-content4,#desc5:checked ~ .column #desc-content5,#price5:checked ~ .column #price-content5,#desc6:checked ~ .column #desc-content6,#price6:checked ~ .column #price-content6,#desc7:checked ~ .column #desc-content7,#price7:checked ~ .column #price-content7,#desc8:checked ~ .column #desc-content8,#price8:checked ~ .column #price-content8,#desc9:checked ~ .column #desc-content9,#price9:checked ~ .column #price-content9,#desc10:checked ~ .column #desc-content10,#price10:checked ~ .column #price-content10,#desc11:checked ~ .column #desc-content11,#price11:checked ~ .column #price-content11,#desc12:checked ~ .column #desc-content12,#price12:checked ~ .column #price-content12,#desc13:checked ~ .column #desc-content13,#price13:checked ~ .column #price-content13,#desc14:checked ~ .column #desc-content14,#price14:checked ~ .column #price-content14,#desc15:checked ~ .column #desc-content15,#price15:checked ~ .column #price-content15,#desc16:checked ~ .column #desc-content16,#price16:checked ~ .column #price-content16 {
   display: block;
+}
+
+span.icon {
+  width: 38px;
 }
