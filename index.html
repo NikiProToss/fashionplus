@@ -100,9 +100,9 @@
     >
       <h2>Наши салоны</h2>
       <div class="tour">
-        <img id="tourControl" src="image/tourPlaceholder.jpg" alt="">
+        <img id="tourControl" src="image/tourPlaceholder.jpg" alt="" />
         <iframe
-        id="myTour"
+          id="myTour"
           src="about:blank"
           data-src="https://inspiring-boyd-5fc2bc.netlify.com/"
           width="600"
@@ -129,7 +129,7 @@
     <!-- Услуги -->
     <section
       id="services"
-      style="background-image: url(image/Repeated-Background.jpg)"
+      style="background-image: url(image/3.jpg)"
     >
       <!-- Обе колонки -->
       <div class="columns is-multiline">
@@ -137,7 +137,29 @@
         <div class="column">
           <!-- Визаж -->
           <div class="columns is-muliline is-mobile">
-            <div class="column with-height is-half"></div>
+            <input class="log-ctrl" type="radio" name="serv1" id="desc1" />
+            <input class="log-ctrl" type="radio" name="serv1" id="price1" />
+            <div class="controls">
+              <label for="desc1">Детально</label>
+              <label for="price1">Цены</label>
+            </div>
+            <div class="column is-half">
+              <div class="serv-content" id="desc-content1">
+                Макияж – это искусство, требующее опыта и любви к своему делу.
+                Выполненный умелым визажистом с применением современных техник
+                нанесения, качественной косметики и профессиональных секретов он
+                способен преобразить человека, подчеркнув его достоинства и
+                естественную привлекательность. С мастерами визажа нашего салона
+                красоты клиенты находят, в первую очередь, взаимопонимание и
+                точное выполнение всех своих пожеланий. И как результат -
+                получают именно тот образ, который всегда хотели.
+              </div>
+              <div class="serv-content" id="price-content1">
+                Кудряшова и Соломенка ню - 200 Дневной - 400 Вечерний - 500
+                Свадебный - 800 Теремки ню - 200 Дневной - 250 Вечерний - 400
+                Свадебный - 700-800
+              </div>
+            </div>
             <div class="column is-half">
               <img src="image/c700x420.jpg" alt="" />
               <h3>Визаж</h3>
@@ -306,7 +328,7 @@
           <div class="column is-half">
             <div class="container">
               <div class="content">
-                <img src="image/Spec1.jpg" alt="" />
+                <img src="image/Кадр_масочка_на_лице2.png" alt="" />
                 <h3>Задорожная Елена Анатольевна</h3>
                 <h4>Ведущий доктор-косметолог</h4>
                 <p>
@@ -322,7 +344,7 @@
           </div>
           <div class="column is-half">
             <div class="content">
-              <img src="image/Spec2.jpg" alt="" />
+              <img src="image/Кадр_масочка_на_лице1.png" alt="" />
               <h3>Задорожная Елена Анатольевна</h3>
               <h4>Ведущий доктор-косметолог</h4>
               <p>
@@ -350,7 +372,11 @@
           <div class="columns">
             <div class="column is-1"></div>
             <div class="column is-3">
-              <img src="image/Spec1.jpg" alt="" style="border-radius: 50%;" />
+              <img
+                src="image/Кадр_фото_кліента.png"
+                alt=""
+                style="border-radius: 50%;"
+              />
             </div>
             <div class="column is-1"></div>
             <div class="column is-5">

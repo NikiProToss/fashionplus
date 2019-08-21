@@ -324,11 +324,11 @@ h3 {
 
 #services img {
   z-index: -1;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
-h3 {
+#services h3 {
   color: #755b5b;
   font-weight: 400;
   padding: 5px 10px;
@@ -338,6 +338,7 @@ h3 {
   margin-bottom: 10px;
   line-height: 1.125;
   font-size: 2rem;
+  position: absolute;
 }
 
 /* Slogan */
@@ -557,10 +558,59 @@ h3 {
   border-radius: 100px;
 }
 
-
 /* Services style and mechanics */
-
+#services .columns {
+  position: relative;
+}
 #services input {
   display: none;
 }
-
+#services .column {
+  overflow: auto;
+}
+/* Style container */
+#services .controls {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  z-index: 2;
+  transition: left 0.3s linear;
+}
+/* Style content */
+#services .serv-content {
+  display: none;
+  position: absolute;
+  top: 0;    
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* Style buttons */
+#services .controls label {
+  display: block;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.36);
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Style container when any is active */
+#services input.log-ctrl:checked ~ .controls {
+  left: 50%;
+}
+/* Style buttons when any is active */
+#services input.log-ctrl:checked ~ .controls label {
+  background-color: rgb(92, 91, 91)
+}
+/* Style active button */
+#services [id^="desc"]:checked ~ .controls [for^="desc"],
+#services [id^="price"]:checked ~ .controls [for^="price"] {
+  background-color: red;
+}
+/* Functionality */
+#desc1:checked ~ .column #desc-content1,#price1:checked ~ .column #price-content1,#desc2:checked ~ .column #desc-content2,#price2:checked ~ .column #price-content2,#desc3:checked ~ .column #desc-content3,#price3:checked ~ .column #price-content3,#desc4:checked ~ .column #desc-content4,#price4:checked ~ .column #price-content4,#desc5:checked ~ .column #desc-content5,#price5:checked ~ .column #price-content5,#desc6:checked ~ .column #desc-content6,#price6:checked ~ .column #price-content6,#desc7:checked ~ .column #desc-content7,#price7:checked ~ .column #price-content7,#desc8:checked ~ .column #desc-content8,#price8:checked ~ .column #price-content8,#desc9:checked ~ .column #desc-content9,#price9:checked ~ .column #price-content9,#desc10:checked ~ .column #desc-content10,#price10:checked ~ .column #price-content10,#desc11:checked ~ .column #desc-content11,#price11:checked ~ .column #price-content11,#desc12:checked ~ .column #desc-content12,#price12:checked ~ .column #price-content12,#desc13:checked ~ .column #desc-content13,#price13:checked ~ .column #price-content13,#desc14:checked ~ .column #desc-content14,#price14:checked ~ .column #price-content14,#desc15:checked ~ .column #desc-content15,#price15:checked ~ .column #price-content15,#desc16:checked ~ .column #desc-content16,#price16:checked ~ .column #price-content16 {
+  display: block;
+}
