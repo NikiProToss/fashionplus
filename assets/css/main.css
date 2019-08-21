@@ -8,20 +8,20 @@ html {
   scroll-behavior: smooth;
 }
 .columns {
-  margin-bottom: 0!important;
-  margin-top: 0!important;
-  margin-right: 0px!important;
-  margin-left: 0px!important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 /* Mobile */
 @media screen and (max-width: 768px) {
   #hero {
-    height: 454px!important;
-    background-image: url(../../image/Mobile_Maximum.jpg)!important; 
+    height: 454px !important;
+    background-image: url(../../image/Mobile_Maximum.jpg) !important;
     background-position: center;
   }
   #tours {
-    background-image: url(../../image/Mobile-Maximum_2.jpg)!important;
+    background-image: url(../../image/Mobile-Maximum_2.jpg) !important;
     background-position: top center;
   }
   #contacts a {
@@ -81,7 +81,7 @@ html {
 @media screen and (max-width: 1299px) {
   #hero {
     height: 769px;
-    background-image: url(../../image/Tab_Maximum.jpg); 
+    background-image: url(../../image/Tab_Maximum.jpg);
     background-position: center;
   }
   #tours {
@@ -92,7 +92,7 @@ html {
 @media screen and (min-width: 1300px) {
   #hero {
     height: 1134px;
-    background-image: url(../../image/Web_1920–1.jpg); 
+    background-image: url(../../image/Web_1920–1.jpg);
     background-position: center;
   }
   #tours {
@@ -133,8 +133,21 @@ html {
   }
 }
 
+.navbar .buttons a {
+  display: block;
+  border-radius: 30px;
+  background-color: rgba(255, 11, 11, 0.8);
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
 /* Screen */
 @media screen and (max-width: 1023px) {
+  .navbar {
+    display: none;
+  }
   #contacts {
     text-align: center !important;
   }
@@ -366,6 +379,7 @@ h3 {
   z-index: -1;
   position: relative;
   width: 100%;
+  transition: all 0.3s ease-out;
 }
 
 #services h3 {
@@ -385,7 +399,7 @@ h3 {
 
 #slogan {
   text-align: center;
-  background-color: rgba(0, 0, 0, 42%);
+  background-color: rgba(0, 0, 0, 0.88);
 }
 
 #slogan h2 {
@@ -620,18 +634,19 @@ h3 {
 #services .controls {
   position: absolute;
   left: 35%;
-  bottom: 5%;
+  bottom: 25%;
   z-index: 2;
-  transition: left 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 #services .flex-reverse .controls {
-  left: 50%;
+  right: 35%;
+  left: unset;
 }
 /* Style content */
 #services .serv-content {
   display: none;
   position: absolute;
-  top: 0;    
+  top: 0;
   margin-left: 20px;
   margin-top: 10px;
 }
@@ -647,13 +662,15 @@ h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
   text-align: center;
+  transition: all 0.3s ease-out;
 }
 /* Style container when any is active */
 #services input.log-ctrl:checked ~ .controls {
   left: 48%;
 }
 #services .flex-reverse input.log-ctrl:checked ~ .controls {
-  left: 33%;
+  right: 48%;
+  left: unset;
 }
 /* Style content container when any is active */
 #services input.log-ctrl:checked ~ .column:nth-of-type(2) {
@@ -661,18 +678,65 @@ h3 {
 }
 /* Style buttons when any is active */
 #services input.log-ctrl:checked ~ .controls label {
-  background-color: rgb(92, 91, 91)
+  background-color: rgba(230, 222, 222, 0.82);
+  color: black;
+}
+#services input.log-ctrl:checked ~ .column img {
+  filter: brightness(0.5);
 }
 /* Style active button */
 #services [id^="desc"]:checked ~ .controls [for^="desc"],
 #services [id^="price"]:checked ~ .controls [for^="price"] {
-  background-color: red;
+  background-color: #ff0000b0;
+  color: white;
 }
 /* Functionality */
-#desc1:checked ~ .column #desc-content1,#price1:checked ~ .column #price-content1,#desc2:checked ~ .column #desc-content2,#price2:checked ~ .column #price-content2,#desc3:checked ~ .column #desc-content3,#price3:checked ~ .column #price-content3,#desc4:checked ~ .column #desc-content4,#price4:checked ~ .column #price-content4,#desc5:checked ~ .column #desc-content5,#price5:checked ~ .column #price-content5,#desc6:checked ~ .column #desc-content6,#price6:checked ~ .column #price-content6,#desc7:checked ~ .column #desc-content7,#price7:checked ~ .column #price-content7,#desc8:checked ~ .column #desc-content8,#price8:checked ~ .column #price-content8,#desc9:checked ~ .column #desc-content9,#price9:checked ~ .column #price-content9,#desc10:checked ~ .column #desc-content10,#price10:checked ~ .column #price-content10,#desc11:checked ~ .column #desc-content11,#price11:checked ~ .column #price-content11,#desc12:checked ~ .column #desc-content12,#price12:checked ~ .column #price-content12,#desc13:checked ~ .column #desc-content13,#price13:checked ~ .column #price-content13,#desc14:checked ~ .column #desc-content14,#price14:checked ~ .column #price-content14,#desc15:checked ~ .column #desc-content15,#price15:checked ~ .column #price-content15,#desc16:checked ~ .column #desc-content16,#price16:checked ~ .column #price-content16 {
+#desc1:checked ~ .column #desc-content1,
+#price1:checked ~ .column #price-content1,
+#desc2:checked ~ .column #desc-content2,
+#price2:checked ~ .column #price-content2,
+#desc3:checked ~ .column #desc-content3,
+#price3:checked ~ .column #price-content3,
+#desc4:checked ~ .column #desc-content4,
+#price4:checked ~ .column #price-content4,
+#desc5:checked ~ .column #desc-content5,
+#price5:checked ~ .column #price-content5,
+#desc6:checked ~ .column #desc-content6,
+#price6:checked ~ .column #price-content6,
+#desc7:checked ~ .column #desc-content7,
+#price7:checked ~ .column #price-content7,
+#desc8:checked ~ .column #desc-content8,
+#price8:checked ~ .column #price-content8,
+#desc9:checked ~ .column #desc-content9,
+#price9:checked ~ .column #price-content9,
+#desc10:checked ~ .column #desc-content10,
+#price10:checked ~ .column #price-content10,
+#desc11:checked ~ .column #desc-content11,
+#price11:checked ~ .column #price-content11,
+#desc12:checked ~ .column #desc-content12,
+#price12:checked ~ .column #price-content12,
+#desc13:checked ~ .column #desc-content13,
+#price13:checked ~ .column #price-content13,
+#desc14:checked ~ .column #desc-content14,
+#price14:checked ~ .column #price-content14,
+#desc15:checked ~ .column #desc-content15,
+#price15:checked ~ .column #price-content15,
+#desc16:checked ~ .column #desc-content16,
+#price16:checked ~ .column #price-content16 {
   display: block;
 }
 
 span.icon {
   width: 38px;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-end.with-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .navbar-item {
+    font-size: 0.9rem;
+  }
 }
