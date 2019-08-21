@@ -17,11 +17,11 @@ html {
 @media screen and (max-width: 768px) {
   #hero {
     height: 454px!important;
-    background-image: url(image/Mobile_Maximum.jpg)!important; 
+    background-image: url(../../image/Mobile_Maximum.jpg)!important; 
     background-position: center;
   }
   #tours {
-    background-image: url(image/Mobile-Maximum_2.jpg)!important;
+    background-image: url(../../image/Mobile-Maximum_2.jpg)!important;
     background-position: top center;
   }
   #contacts a {
@@ -81,22 +81,22 @@ html {
 @media screen and (max-width: 1299px) {
   #hero {
     height: 769px;
-    background-image: url(image/Tab_Maximum.jpg); 
+    background-image: url(../../image/Tab_Maximum.jpg); 
     background-position: center;
   }
   #tours {
-    background-image: url(image/Tab-Maximum_2.jpg);
+    background-image: url(../../image/Tab-Maximum_2.jpg);
     background-position: top center;
   }
 }
 @media screen and (min-width: 1300px) {
   #hero {
     height: 1134px;
-    background-image: url(image/Web_1920–1.jpg); 
+    background-image: url(../../image/Web_1920–1.jpg); 
     background-position: center;
   }
   #tours {
-    background-image: url(image/Web-1920-–-2.jpg);
+    background-image: url(../../image/Web-1920-–-2.jpg);
     background-position: top center;
   }
 }
