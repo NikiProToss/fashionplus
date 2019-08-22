@@ -15,7 +15,7 @@ html {
 }
 h1 {
   position: absolute;
-top: 40%;
+top: 25%;
 margin: 0 auto;
 display: block;
 width: 100vw;
@@ -23,6 +23,9 @@ text-align: center;
 font-size: 4rem;
 color: #dbbc16;
 font-family: "Philosopher", sans-serif;
+}
+#hero {
+  position: relative;
 }
 /* Mobile */
 @media screen and (max-width: 768px) {
@@ -32,7 +35,7 @@ font-family: "Philosopher", sans-serif;
     background-position: center;
   }
   h1 {
-    top: 30%!important;
+    top: 35%!important;
     font-size: 3.5rem!important;
   }
   #tours {
@@ -165,10 +168,31 @@ font-family: "Philosopher", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
+.navbar .buttons a:hover {
+  background-color: #dbbc16;
+}
 /* Screen */
 @media screen and (max-width: 1023px) {
   .navbar {
     display: none;
+  }
+  #services img {
+    transition: all 0s!important;
+  }
+  #main .column {
+    transition: all 0s!important ;
+  }
+  #services .controls label {
+    transition: all 0s!important;
+  }
+
+#services .controls {
+  transition: all 0s!important;
+}
+  #tours > h2 {
+    max-width: 70vw !important;
+    font-size: 4rem !important;
+    letter-spacing: 0!important;
   }
   #contacts {
     text-align: center !important;
