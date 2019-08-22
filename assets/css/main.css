@@ -75,6 +75,7 @@ font-family: "Philosopher", sans-serif;
   }
   #reviews img {
     max-width: 70%;
+    border-radius: 50%;
   }
   #specialists img {
     max-width: 60% !important;
@@ -117,8 +118,11 @@ font-family: "Philosopher", sans-serif;
 @media screen and (min-width: 1300px) {
   #hero {
     height: 1134px;
-    background-image: url(../../image/Web_1920–1.jpg);
+    background-image: url(../../image/lazy/Web_1920–1.jpg);
     background-position: center;
+  }
+  #hero.visible {
+    background-image: url(../../image/Web_1920–1.jpg);
   }
   #tours {
     background-image: url(../../image/Web-1920-–-2.jpg);
@@ -785,4 +789,33 @@ span.icon {
   .navbar-item {
     font-size: 0.9rem;
   }
+}
+
+
+/* Backgrounds */
+#specialists {
+  background-image: url(../../image/4.jpg);
+}
+/* #specialists.visible {
+  background-image: url(../../image/4.jpg);
+} */
+#contacts {
+  background-image: url(../../image/5.jpg);
+  background-size: cover;
+}
+/* #contacts.visible {
+  background-image: url(../../image/5.jpg);
+} */
+#services {
+  background-image: url(../../image/3.jpg)
+}
+/* #services.visible {
+  background-image: url(../../image/3.jpg)
+} */
+#appointment {
+  background-image: url(../../image/lazy/4bde5fb9ee3399a5d365b82f04516f56.jpg); 
+  background-size: cover;
+}
+#appointment.visible {
+  background-image: url(../../image/4bde5fb9ee3399a5d365b82f04516f56.jpg);
 }

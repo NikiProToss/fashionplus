@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Салон красоты печерский раен, центр Киева. Высококачественное оборудование.">
     <title>Fashion Plus Beauty Salon</title>
     <link rel="stylesheet" href="assets/css/bulma.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -16,33 +17,33 @@
   </head>
   <body>
     <!-- Главное -->
-    <section id="hero">
+    <section class="lazy-background" id="hero">
       <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <a class="navbar-item">
               <div class="icons" style="text-align: end; font-size: 2rem;">
                 <span class="icon has-text-info">
-                  <img src="image/facebook.svg"></i>
+                  <img src="image/facebook.svg" alt="facebook logo"></i>
                 </span>
               </div>
               <a class="navbar-item">
                 <div class="icons" style="text-align: end; font-size: 2rem;">
                   <span class="icon has-text-info">
-                    <img src="image/instagram.svg"></i>
+                    <img src="image/instagram.svg" alt="instagram logo"></i>
                   </span>
                 </div>
               </a>
               <a class="navbar-item">
                 <div class="icons" style="text-align: end; font-size: 2rem;">
                   <span class="icon has-text-info">
-                    <img src="image/telegram.svg"></i>
+                    <img src="image/telegram.svg" alt="telegram logo"></i>
                   </span>
                 </div>
               </a>
               <a class="navbar-item">
                 <div class="icons" style="text-align: end; font-size: 2rem;">
                   <span class="icon has-text-info">
-                    <img src="image/viber.svg"></i>
+                    <img src="image/viber.svg" alt="viber logo"></i>
                   </span>
                 </div>
               </a>
@@ -65,17 +66,17 @@
             <div class="navbar-end">
               <a class="navbar-item">
                 <span class="icon"> 
-                  <img src="image/marker.svg"></i></span
+                  <img src="image/marker.svg" alt="marker"></i></span
                 >Киев, бульв. Леси Украинки 7Б<br />+38 (067) 599 11 77
               </a>
               <a class="navbar-item">
                 <span class="icon"> 
-                  <img src="image/marker.svg"></i></span
+                  <img src="image/marker.svg" alt="marker"></i></span
                 >Киев, ул. Академика Вильямса 6а<br />+38 (067) 599 11 77
               </a>
               <a class="navbar-item">
                 <span class="icon">
-                  <img src="image/marker.svg"></i></span
+                  <img src="image/marker.svg" alt="marker"></i></span
                 >Киев, ул. Кудряшова 20а<br />+38 (067) 599 11 77
               </a>
             </div>
@@ -100,8 +101,9 @@
     >
       <h2>Наши салоны</h2>
       <div class="tour">
-        <img id="tourControl" src="image/tourPlaceholder.jpg" alt="" />
+        <img id="tourControl" src="image/tourPlaceholder.jpg" alt="photo tour placeholder" />
         <iframe
+        title="Салон красоты 360 тур"
           id="myTour"
           src="about:blank"
           data-src="https://inspiring-boyd-5fc2bc.netlify.com/"
@@ -117,19 +119,17 @@
     <section id="main">
       <div class="columns" id="mainimg">
         <div class="column">
-          <img class="lazy" src="image/lazy/image/1-big.jpg" data-src="image/image/1-big.jpg" data-srcset="image/image/1-big.jpg" alt="Интеъер салона" />
-          <h2>Инновационный аппарат</h2>
+            <img class="lazy" src="image/lazy/1-big.jpg" data-src="image/1-big.jpg" data-srcset="image/1-big.jpg" alt="Фото использования инновационного апарата Альтера" />
         </div>
         <div class="column">
-          <img src="image/2-big.jpg" alt="" />
-          <h2>Косметология</h2>
+            <img class="lazy" src="image/lazy/2-big.jpg" data-src="image/2-big.jpg" data-srcset="image/2-big.jpg" alt="Фото косметологического кабинета" />
         </div>
       </div>
     </section>
     <!-- Услуги -->
     <section
       id="services"
-      style="background-image: url(image/3.jpg)"
+      class="lazy-background"
     >
       <!-- Обе колонки -->
       <div class="columns is-multiline">
@@ -464,7 +464,6 @@
               </div>
               <div class="column is-half">
                 <img class="lazy" src="image/lazy/pricheski-s-kosami.jpg" data-src="image/pricheski-s-kosami.jpg" data-srcset="image/pricheski-s-kosami.jpg" alt="Пример плетения кос" />
-                
               </div>
             </div>
           <!-- Брови -->
@@ -627,7 +626,7 @@
         <div class="container">
           <div class="columns">
             <div class="column">
-              <a href="">Заказать звонок</a>
+              <a href="#appointment">Заказать звонок</a>
             </div>
             <div class="column">
               <a href="#appointment">Подробнее</a>
@@ -642,8 +641,7 @@
     <!-- Специалисты -->
     <section
       id="specialists"
-      style="background-image: url(image/4.jpg)"
-      class="section"
+      class="lazy-background section"
     >
       <h2>Наши Специалисты</h2>
       <div class="container">
@@ -651,7 +649,7 @@
           <div class="column is-half">
             <div class="container">
               <div class="content">
-                <img class="lazy" src="image/lazy/Кадр_масочка_на_лице2.jpg" data-src="image/Кадр_масочка_на_лице2.png" data-srcset="image/Кадр_масочка_на_лице2.png" alt="Фото первого специалиста" />
+                <img class="lazy" src="image/lazy/Кадр_масочка_на_лице2.jpg" data-src="image/Кадр_масочка_на_лице2.jpg" data-srcset="image/Кадр_масочка_на_лице2.jpg" alt="Фото первого специалиста" />
                 <h3>Задорожная Елена Анатольевна</h3>
                 <h4>Ведущий доктор-косметолог</h4>
                 <p>
@@ -667,7 +665,7 @@
           </div>
           <div class="column is-half">
             <div class="content">
-                <img class="lazy" src="image/lazy/Кадр_масочка_на_лице1.jpg" data-src="image/Кадр_масочка_на_лице1.png" data-srcset="image/Кадр_масочка_на_лице1.png" alt="Фото второго специалиста" />
+                <img class="lazy" src="image/lazy/Кадр_масочка_на_лице1.jpg" data-src="image/Кадр_масочка_на_лице1.jpg" data-srcset="image/Кадр_масочка_на_лице1.jpg" alt="Фото второго специалиста" />
               <h3>Задорожная Елена Анатольевна</h3>
               <h4>Ведущий доктор-косметолог</h4>
               <p>
@@ -695,7 +693,7 @@
           <div class="columns">
             <div class="column is-1"></div>
             <div class="column is-3">
-                <img class="lazy" src="image/lazy/Кадр_фото_кліента.jpg" data-src="image/Кадр_фото_кліента.png" data-srcset="image/Кадр_фото_кліента.png" alt="Фото клиента" />
+                <img class="lazy" src="image/lazy/Кадр_фото_кліента.jpg" data-src="image/Кадр_фото_кліента.jpg" data-srcset="image/Кадр_фото_кліента.jpg" alt="Фото клиента" />
             </div>
             <div class="column is-1"></div>
             <div class="column is-5">
@@ -716,8 +714,7 @@
     <!-- Запись -->
     <section
       id="appointment"
-      class="section is-medium"
-      style="background-image: url(image/4bde5fb9ee3399a5d365b82f04516f56.jpg); background-size: cover;"
+      class="lazy-background section is-medium"
     >
       <div class="container">
         <h2>Онлайн Запись</h2>
@@ -729,13 +726,13 @@
             <div class="column is-one-third-desktop">
               <!-- All elements must have a name attribute -->
               <div class="field">
-                <label class="label">Как к Вам обращаться?</label>
+                <label class="label" for="user-name">Как к Вам обращаться?</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Ваше имя" />
+                  <input id="user-name" class="input" type="text" placeholder="Ваше имя" />
                 </div>
               </div>
               <div class="field">
-                <div class="field-label">Ваш телефон</div>
+                <div class="field-label"><label for="tel-number">Ваш телефон</label> </div>
                 <div class="field-body">
                   <div class="field is-expanded">
                     <div class="field has-addons">
@@ -745,7 +742,7 @@
                         </a>
                       </p>
                       <p class="control is-expanded">
-                        <input
+                        <input id="tel-number"
                           class="input"
                           type="tel"
                           placeholder="93 111 1111"
@@ -756,21 +753,21 @@
                 </div>
               </div>
               <div class="field">
-                <label class="label">Дата и время посещения</label>
+                <label class="label" for="date-and-time">Дата и время посещения</label>
                 <div class="control">
-                  <input class="input" type="datetime-local" placeholder="Укажите дату посещения" />
+                  <input id="date-and-time" class="input" type="datetime-local" placeholder="Укажите дату посещения" />
                 </div>
               </div>
               <!-- A button of type submit -->
             </div>
             <div class="column is-two-thirds-desktop">
               <div class="field">
-                <label class="label">
+                <label class="label" for="place-of-service">
                   Салон
                 </label>
                 <div class="control is-expanded">
                   <div class="select is-fullwidth">
-                    <select>
+                    <select id="place-of-service">
                       <option>Выберите самый подходящий салон</option>
                       <option>Киев, печерск бульв. Леси Украинки 7Б</option>
                       <option>Киев, ул. Академика Вильямса 6а</option>
@@ -780,12 +777,12 @@
                 </div>
               </div>
               <div class="field">
-                <label class="label">
+                <label class="label" for="service-type">
                   Услуга
                 </label>
                 <div class="control is-expanded">
                   <div class="select is-fullwidth">
-                    <select>
+                    <select id="service-type">
                       <option>Выберите нужную услугу</option>
                       <option>Альтера</option>
                       <option>Косметология</option>
@@ -810,9 +807,9 @@
                 </div>
               </div>
               <div class="field">
-                <label class="label">Ваш коментарий</label>
+                <label class="label" for="comment">Ваш коментарий</label>
                 <div class="control">
-                  <input
+                  <input id="comment"
                     class="input"
                     type="text"
                     placeholder="Что Вас интересует?"
@@ -828,8 +825,7 @@
     <!-- Контакты -->
     <section
       id="contacts"
-      style="background-image: url(image/5.jpg); background-size: cover;"
-      class="section is-medium"
+      class="lazy-background section is-medium"
     >
       <div class="container">
         <h2>Наши контакты</h2>
@@ -837,19 +833,19 @@
           <div class="columns is-mobile">
             <div class="column">
               <span class="icon">
-                <img src="image/marker.svg"></i>
+                <img src="image/marker.svg" alt="marker"></i>
               </span>
               <h3>Печерск</h3>
             </div>
             <div class="column">
               <span class="icon">
-                <img src="image/marker.svg"></i>
+                <img src="image/marker.svg" alt="marker"></i>
               </span>
               <h3>Теремки</h3>
             </div>
             <div class="column">
               <span class="icon">
-                <img src="image/marker.svg"></i>
+                <img src="image/marker.svg" alt="marker"></i>
               </span>
               <h3>Соломенка</h3>
             </div>
@@ -884,16 +880,16 @@
           </p>
           <div class="icons" style="text-align: end; font-size: 3rem;">
             <span class="icon has-text-info">
-              <img src="image/facebook.svg"></i>
+              <img src="image/facebook.svg" alt="facebook logo"></i>
             </span>
             <span class="icon has-text-success">
-              <img src="image/instagram.svg"></i>
+              <img src="image/instagram.svg" alt="instagram logo"></i>
             </span>
             <span class="icon has-text-warning">
-              <img src="image/telegram.svg"></i>
+              <img src="image/telegram.svg" alt="telegram logo"></i>
             </span>
             <span class="icon has-text-danger">
-              <img src="image/viber.svg"></i>
+              <img src="image/viber.svg" alt="viber logo"></i>
             </span>
           </div>
         </div>
@@ -901,7 +897,7 @@
     </section>
     <!-- Карта -->
     <section class="map">
-      <iframe
+      <iframe title="Карта сети салонов красоты Fashionplus"
         src="https://www.google.com/maps/d/embed?mid=1VEBVLvgMYOyaMIruMB3uPQiKSInU8Tar"
         width="100%"
         height="100%"
