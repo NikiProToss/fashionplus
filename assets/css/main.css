@@ -162,6 +162,11 @@ font-family: "Philosopher", sans-serif;
   }
 }
 
+
+#reviews img {
+  border-radius: 50%;
+}
+
 .navbar .buttons a {
   display: block;
   border-radius: 30px;
