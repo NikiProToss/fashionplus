@@ -21,7 +21,7 @@ display: block;
 width: 100vw;
 text-align: center;
 font-size: 4rem;
-color: #dbbc16;
+color: #c5b265;
 font-family: "Philosopher", sans-serif;
 }
 #hero {
@@ -45,7 +45,7 @@ font-family: "Philosopher", sans-serif;
   #tours h3 {
     letter-spacing: 0;
   }
-  #contacts a {
+  #contacts a.contact-btn{
     margin: 20px auto !important;
     letter-spacing: 2px !important;
     display: none !important;
@@ -214,13 +214,13 @@ font-family: "Philosopher", sans-serif;
     font-size: 2rem !important;
     letter-spacing: 0;
   }
-  #contacts a {
+  #contacts a.contact-btn{
     margin: 20px auto !important;
     letter-spacing: 2px !important;
     display: block !important;
     letter-spacing: 0;
   }
-  #contacts columns column:nth-child(3) a {
+  #contacts .columns .column:nth-child(3) a.contact-btn:last-of-type {
     display: block !important;
   }
   #appointment h2 {
@@ -268,7 +268,7 @@ font-family: "Philosopher", sans-serif;
     font-size: 1rem !important;
     letter-spacing: 0;
   }
-  #contacts a {
+  #contacts a.contact-btn{
     margin: 20px auto !important;
     letter-spacing: 2px !important;
     display: none !important;
@@ -276,6 +276,10 @@ font-family: "Philosopher", sans-serif;
   #contacts columns column:nth-child(3) a {
     display: block !important;
   }
+}
+
+#contacts .column:last-of-type a.contact-btn:last-of-type {
+  display: none;
 }
 
 /* Navbar */
@@ -417,7 +421,6 @@ font-family: "Philosopher", sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   position: relative;
 }
 
@@ -619,7 +622,7 @@ h3 {
   color: red;
 }
 
-#contacts a {
+#contacts a.contact-btn{
   display: block;
   margin-top: 20px;
   border-radius: 30px;
@@ -634,7 +637,7 @@ h3 {
   transition: all 0.3s ease-in;
 }
 
-#contacts a:hover {
+#contacts a.contact-btn:hover {
   color: #c30d2c;
   background-color: #00000024;
 }
