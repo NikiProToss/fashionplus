@@ -1,7 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
+  var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
 
   if ("IntersectionObserver" in window) {
+
+    let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          lazyBackgroundObserver.unobserve(entry.target);
+        }
+      });
+    });
+
     let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -14,31 +25,17 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
 
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage);
-    });
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          lazyBackgroundObserver.unobserve(entry.target);
-        }
-      });
-    });
-
     lazyBackgrounds.forEach(function(lazyBackground) {
       lazyBackgroundObserver.observe(lazyBackground);
     });
+    
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
   }
 });
+
+
+
+    
 
