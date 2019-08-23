@@ -13,16 +13,21 @@ html {
   margin-right: 0px !important;
   margin-left: 0px !important;
 }
+a.navbar-item:hover {
+  background-color: #fafafa;
+  color: #3273dc;
+  border-radius: 20px;
+}
 h1 {
   position: absolute;
-top: 25%;
-margin: 0 auto;
-display: block;
-width: 100vw;
-text-align: center;
-font-size: 4rem;
-color: #c5b265;
-font-family: "Philosopher", sans-serif;
+  top: 25%;
+  margin: 0 auto;
+  display: block;
+  width: 100vw;
+  text-align: center;
+  font-size: 4rem;
+  color: #c5b265;
+  font-family: "Philosopher", sans-serif;
 }
 #hero {
   position: relative;
@@ -35,8 +40,8 @@ font-family: "Philosopher", sans-serif;
     background-position: center;
   }
   h1 {
-    top: 35%!important;
-    font-size: 3.5rem!important;
+    top: 35% !important;
+    font-size: 3.5rem !important;
   }
   #tours {
     background-image: url(../../image/Mobile-Maximum_2.jpg) !important;
@@ -45,7 +50,7 @@ font-family: "Philosopher", sans-serif;
   #tours h3 {
     letter-spacing: 0;
   }
-  #contacts a.contact-btn{
+  #contacts a.contact-btn {
     margin: 20px auto !important;
     letter-spacing: 2px !important;
     display: none !important;
@@ -139,13 +144,13 @@ font-family: "Philosopher", sans-serif;
     padding-top: 46%;
   }
   .tour {
-    max-width: 70vw !important;
+    max-width: 70vw;
     padding-bottom: 40% !important;
   }
   #tours > h2 {
-    max-width: 70vw !important;
+    max-width: 70vw ;
     font-size: 4rem !important;
-    letter-spacing: 0!important;
+    letter-spacing: 0 !important;
   }
   #reviews p {
     margin-bottom: 20px;
@@ -161,7 +166,6 @@ font-family: "Philosopher", sans-serif;
     float: right;
   }
 }
-
 
 #reviews img {
   border-radius: 50%;
@@ -182,26 +186,26 @@ font-family: "Philosopher", sans-serif;
 }
 /* Screen */
 @media screen and (max-width: 1023px) {
+  #tours > h2 {
+    max-width: 80vw!important;
+    font-size: 4rem !important;
+    letter-spacing: 0 !important;
+  }
   .navbar {
     display: none;
   }
   #services img {
-    transition: all 0s!important;
+    transition: all 0s !important;
   }
   #main .column {
-    transition: all 0s!important ;
+    transition: all 0s !important ;
   }
   #services .controls label {
-    transition: all 0s!important;
+    transition: all 0s !important;
   }
 
-#services .controls {
-  transition: all 0s!important;
-}
-  #tours > h2 {
-    max-width: 70vw !important;
-    font-size: 4rem !important;
-    letter-spacing: 0!important;
+  #services .controls {
+    transition: all 0s !important;
   }
   #contacts {
     text-align: center !important;
@@ -214,7 +218,7 @@ font-family: "Philosopher", sans-serif;
     font-size: 2rem !important;
     letter-spacing: 0;
   }
-  #contacts a.contact-btn{
+  #contacts a.contact-btn {
     margin: 20px auto !important;
     letter-spacing: 2px !important;
     display: block !important;
@@ -268,7 +272,7 @@ font-family: "Philosopher", sans-serif;
     font-size: 1rem !important;
     letter-spacing: 0;
   }
-  #contacts a.contact-btn{
+  #contacts a.contact-btn {
     margin: 20px auto !important;
     letter-spacing: 2px !important;
     display: none !important;
@@ -320,12 +324,13 @@ font-family: "Philosopher", sans-serif;
 #tours > h2 {
   text-transform: uppercase;
   background: #000000a6;
-  color: #dedb1b;
   max-width: 80vw;
   margin: 0 auto;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: 20px;
+  color: #ffdc4d;
+font-family: "Philosopher", sans-serif;
 }
 
 /* Section 3-4 */
@@ -464,8 +469,9 @@ h3 {
   color: gold;
   font-size: 5rem;
   /* letter-spacing: 5px; */
-  background: -webkit-linear-gradient(left, #eee, rgb(173, 0, 0));
+  background:-webkit-linear-gradient(left, rgba(230,198,196,1) 12%, rgba(255,252,252,1) 18%, rgba(250,163,155,1) 31%, rgba(255,40,20,1) 46%, rgba(255,53,34,1) 57%, rgba(255,71,54,1) 72%, rgba(255,101,87,1) 97%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 40px;
 }
@@ -497,9 +503,6 @@ h3 {
   background-position: top right 150px;
   background-repeat-x: no-repeat;
   background-repeat: repeat-y;
-}
-
-#specialists > h2 {
 }
 
 #specialists .content {
@@ -622,7 +625,7 @@ h3 {
   color: red;
 }
 
-#contacts a.contact-btn{
+#contacts a.contact-btn {
   display: block;
   margin-top: 20px;
   border-radius: 30px;
@@ -799,7 +802,6 @@ span.icon {
   }
 }
 
-
 /* Backgrounds */
 #specialists {
   background-image: url(../../image/4.jpg);
@@ -815,13 +817,13 @@ span.icon {
   background-image: url(../../image/5.jpg);
 } */
 #services {
-  background-image: url(../../image/3.jpg)
+  background-image: url(../../image/3.jpg);
 }
 /* #services.visible {
   background-image: url(../../image/3.jpg)
 } */
 #appointment {
-  background-image: url(../../image/lazy/4bde5fb9ee3399a5d365b82f04516f56.jpg); 
+  background-image: url(../../image/lazy/4bde5fb9ee3399a5d365b82f04516f56.jpg);
   background-size: cover;
 }
 #appointment.visible {

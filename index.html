@@ -8,15 +8,10 @@
       name="Description"
       content="Салон красоты печерский раен, центр Киева. Высококачественное оборудование."
     />
-    <title>Fashion Plus Beauty Salon</title>
+    <title>Fashion Plus Салон Красоты</title>
+    <link rel="icon" href="image/favicon.png" />
     <link rel="stylesheet" href="assets/css/bulma.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Philosopher&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="image/favicon.png" />
-    <script src="assets/js/lazy.js"></script>
   </head>
   <body>
     <!-- Главное -->
@@ -94,7 +89,7 @@
             >
               <span class="icon">
                 <img src="image/marker.svg" alt="marker"/></span
-              >Киев, ул. Академика Вильямса 6а<br />+38 (067) 599 11 77
+              >Киев, ул. Академика Вильямса 6а<br />+38 (073) 323 18 55
             </a>
             <a
               href="https://g.page/Fashionplus-solomenka?share"
@@ -103,7 +98,7 @@
             >
               <span class="icon">
                 <img src="image/marker.svg" alt="marker"/></span
-              >Киев, ул. Кудряшова 20а<br />+38 (067) 599 11 77
+              >Киев, ул. Кудряшова 20а<br />+38 (073) 414 80 08
             </a>
           </div>
 
@@ -774,7 +769,7 @@
                   data-srcset="image/Кадр_масочка_на_лице2.jpg"
                   alt="Фото первого специалиста"
                 />
-                <h3>Задорожная Елена Анатольевна</h3>
+                <h3>Панина Елена Александровна</h3>
                 <h4>Ведущий доктор-косметолог</h4>
                 <p>
                   Мы гордимся, что в нашей команде есть этот человек! Елена
@@ -863,6 +858,7 @@
                 >
                 <div class="control">
                   <input
+                  name="Имя"
                     id="user-name"
                     class="input"
                     type="text"
@@ -884,6 +880,8 @@
                       </p>
                       <p class="control is-expanded">
                         <input
+                        pattern='^[0-9-\s()]*$'
+                        name="Номер телефона"
                           id="tel-number"
                           class="input"
                           type="tel"
@@ -900,6 +898,7 @@
                 >
                 <div class="control">
                   <input
+                  name="Дата и время"
                     id="date-and-time"
                     class="input"
                     type="datetime-local"
@@ -916,7 +915,7 @@
                 </label>
                 <div class="control is-expanded">
                   <div class="select is-fullwidth">
-                    <select id="place-of-service">
+                    <select id="place-of-service" name="Салон">
                       <option>Выберите самый подходящий салон</option>
                       <option>Киев, печерск бульв. Леси Украинки 7Б</option>
                       <option>Киев, ул. Академика Вильямса 6а</option>
@@ -931,7 +930,7 @@
                 </label>
                 <div class="control is-expanded">
                   <div class="select is-fullwidth">
-                    <select id="service-type">
+                    <select id="service-type" name="Услуга">
                       <option>Выберите нужную услугу</option>
                       <option>Альтера</option>
                       <option>Косметология</option>
@@ -959,6 +958,7 @@
                 <label class="label" for="comment">Ваш коментарий</label>
                 <div class="control">
                   <input
+                    name="Комментарий"
                     id="comment"
                     class="input"
                     type="text"
@@ -1084,8 +1084,12 @@
     <!-- Карта -->
     <section class="map">
       <iframe
+        class="lazy"
+        id="location-map"
         title="Карта сети салонов красоты Fashionplus"
-        src="https://www.google.com/maps/d/embed?mid=1VEBVLvgMYOyaMIruMB3uPQiKSInU8Tar"
+        src="about:blank"
+        data-src="https://www.google.com/maps/d/embed?mid=1VEBVLvgMYOyaMIruMB3uPQiKSInU8Tar"
+        data-srcset="https://www.google.com/maps/d/embed?mid=1VEBVLvgMYOyaMIruMB3uPQiKSInU8Tar"
         width="100%"
         height="100%"
         style="height: 600px;"
@@ -1093,6 +1097,11 @@
     </section>
     <!-- Новости -->
     <!-- Scripts -->
+    <script src="assets/js/lazy.js"></script>
+    <link
+    href="https://fonts.googleapis.com/css?family=Philosopher&display=swap"
+    rel="stylesheet"
+  />
     <script src="assets/js/main.js"></script>
   </body>
 </html>
