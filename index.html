@@ -858,7 +858,7 @@
                 >
                 <div class="control">
                   <input
-                  name="Имя"
+                    name="Имя"
                     id="user-name"
                     class="input"
                     type="text"
@@ -880,8 +880,8 @@
                       </p>
                       <p class="control is-expanded">
                         <input
-                        pattern='^[0-9-\s()]*$'
-                        name="Номер телефона"
+                          pattern="^[0-9-\s()]*$"
+                          name="Номер телефона"
                           id="tel-number"
                           class="input"
                           type="tel"
@@ -898,7 +898,7 @@
                 >
                 <div class="control">
                   <input
-                  name="Дата и время"
+                    name="Дата и время"
                     id="date-and-time"
                     class="input"
                     type="datetime-local"
@@ -1099,9 +1099,18 @@
     <!-- Scripts -->
     <script src="assets/js/lazy.js"></script>
     <link
-    href="https://fonts.googleapis.com/css?family=Philosopher&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
     <script src="assets/js/main.js"></script>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
   </body>
 </html>
