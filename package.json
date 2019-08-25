@@ -1,0 +1,28 @@
+{
+  "name": "fashionplus-beauty.com",
+  "version": "1.0.0",
+  "description": "fashionplus beauty salon website",
+  "main": "app.js",
+  "scripts": {
+    "purgecss": "purgecss --css assets/css/all.css --content index.html --out assets/css/",
+    "watch-sass": "sass --style=compressed --no-source-map --watch assets/sass/all.scss assets/css/all.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max3D-Studio/fashionplus.git"
+  },
+  "keywords": [
+    "beauty",
+    "salon",
+    "cosmetology"
+  ],
+  "author": "Nikita Klimenko @Nikitossklim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Max3D-Studio/fashionplus/issues"
+  },
+  "homepage": "https://github.com/Max3D-Studio/fashionplus#readme",
+  "dependencies": {
+    "bulma": "^0.7.5"
+  }
+}

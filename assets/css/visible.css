@@ -1,0 +1,9 @@
+#appointment.visible {
+    background-image: url(../../image/4bde5fb9ee3399a5d365b82f04516f56.jpg);
+}
+
+@media screen and (min-width: 1300px) {
+  #hero.visible {
+    background-image: url(../../image/Web_1920–1.jpg);
+  }
+}
