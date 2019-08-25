@@ -115,6 +115,10 @@
         </div>
       </nav>
       <h1>Салон красоты</h1>
+      <div class="call-to-action">
+        <a href="#main">Наши услуги</a>
+        <a href="#appointment">Связаться с нами</a>
+      </div>
     </section>
     <!-- 3D Туры -->
     <section id="tours" class="section is-medium">
@@ -189,9 +193,35 @@
                 получают именно тот образ, который всегда хотели.
               </div>
               <div class="serv-content" id="price-content1">
-                Кудряшова и Соломенка ню - 200 Дневной - 400 Вечерний - 500
-                Свадебный - 800 Теремки ню - 200 Дневной - 250 Вечерний - 400
-                Свадебный - 700-800
+                  <h5>Кудряшова и Соломенка</h5> 
+                  <div class="columns is-mobile">
+                    <div class="column">
+                      ню <br>
+                      Дневной<br>
+                      Вечерний<br>
+                    </div>
+                    <div class="column">
+                      200 <br>
+                      400 <br>
+                      500 <br>
+                    </div>
+                  </div>
+                  <h5>Теремки</h5>
+                  <div class="columns is-mobile">
+                    <div class="column">
+                      ню <br>
+                      Дневной<br>
+                      Вечерний<br>
+                      Свадебный
+                    </div>
+                    <div class="column" style="text-align: center">
+                      200 <br>
+                      250 <br>
+                      400 <br>
+                      700-800
+                    </div>
+                  </div>
+                  <a href="#appointment">Оставить заявку</a>
               </div>
             </div>
             <div class="column is-half">
@@ -224,9 +254,34 @@
                 получают именно тот образ, который всегда хотели.
               </div>
               <div class="serv-content" id="price-content2">
-                Кудряшова и Соломенка ню - 200 Дневной - 400 Вечерний - 500
-                Свадебный - 800 Теремки ню - 200 Дневной - 250 Вечерний - 400
-                Свадебный - 700-800
+                  <h5>Кудряшова и Печерск</h5> 
+                  <div class="columns is-mobile">
+                    <div class="column">
+                      Стрижка под насадку <br>
+                      Стрижка модельная <br>
+                      Укладка волос <br>
+                    </div>
+                    <div class="column">
+                      250 <br>
+                      420 <br>
+                      200 <br>
+                    </div>
+                  </div>
+                  <h5>Теремки</h5>
+                  <div class="columns is-mobile">
+                    <div class="column">
+                      ню <br>
+                      Дневной<br>
+                      Вечерний<br>
+                      Свадебный
+                    </div>
+                    <div class="column" style="text-align: center">
+                      200 <br>
+                      250 <br>
+                      400 <br>
+                      700-800
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="column is-half">
@@ -329,9 +384,34 @@
                 получают именно тот образ, который всегда хотели.
               </div>
               <div class="serv-content" id="price-content5">
-                Кудряшова и Соломенка ню - 200 Дневной - 400 Вечерний - 500
-                Свадебный - 800 Теремки ню - 200 Дневной - 250 Вечерний - 400
-                Свадебный - 700-800
+                <h5>Кудряшова и Соломенка</h5> 
+                <div class="columns">
+                  <div class="column">
+                    ню <br>
+                    Дневной<br>
+                    Вечерний<br>
+                  </div>
+                  <div class="column">
+                    200 <br>
+                    400 <br>
+                    500 <br>
+                  </div>
+                </div>
+                <h5>Теремки</h5>
+                <div class="columns">
+                  <div class="column">
+                    ню <br>
+                    Дневной<br>
+                    Вечерний<br>
+                    Свадебный
+                  </div>
+                  <div class="column" style="text-align: center">
+                    200 <br>
+                    250 <br>
+                    400 <br>
+                    700-800
+                  </div>
+                </div>
               </div>
             </div>
             <div class="column is-half">
@@ -770,7 +850,7 @@
                   data-srcset="image/Кадр_масочка_на_лице2.jpg"
                   alt="Фото первого специалиста"
                 />
-                <h3>Панина Елена Александровна</h3>
+                <h3>Задорожная Елена Анатольевна</h3>
                 <h4>Ведущий доктор-косметолог</h4>
                 <p>
                   Мы гордимся, что в нашей команде есть этот человек! Елена
@@ -792,7 +872,7 @@
                 data-srcset="image/Кадр_масочка_на_лице1.jpg"
                 alt="Фото второго специалиста"
               />
-              <h3>Задорожная Елена Анатольевна</h3>
+              <h3>Панина Елена Александровна</h3>
               <h4>Ведущий доктор-косметолог</h4>
               <p>
                 Елена Александровна это сертифицированный специалист
@@ -1104,14 +1184,5 @@
       rel="stylesheet"
     />
     <script src="assets/js/main.js"></script>
-    <script>
-      // Check that service workers are supported
-      if ("serviceWorker" in navigator) {
-        // Use the window load event to keep the page load performant
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("sw.js");
-        });
-      }
-    </script>
   </body>
 </html>
