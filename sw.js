@@ -18,6 +18,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "7405648ab6ab8a0432641fbd48c70729"
   },
   {
+    "url": "assets/js/service-worker.js",
+    "revision": "8192cc37c2776ed14b74939d3ca08ca0"
+  },
+  {
     "url": "assets/sass/all.scss",
     "revision": "f4dfe47db76815b58ce6ff7e29c4203d"
   },
@@ -279,7 +283,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "0c3f65469164f339953469198e98c759"
+    "revision": "306f7efe1a7bbcc90dd7e2d45defdf7f"
   },
   {
     "url": "package-lock.json",
@@ -287,18 +291,42 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "package.json",
-    "revision": "038de3288e49e51a902c2342e22858e5"
+    "revision": "ab820cf6fdd3ad16ea2818bead655b65"
   },
   {
     "url": "README.md",
-    "revision": "5ef87eed4d1b4f8ba793c2937f865586"
-  },
-  {
-    "url": "service-worker.js",
-    "revision": "35c18af984d2075771d6b6bc4f5f7117"
+    "revision": "a5eb81e7dc2cc3d9d8f9ea05cfd30366"
   },
   {
     "url": "workbox-config.js",
-    "revision": "36b943c7efb581449ebef1df2a46bf65"
+    "revision": "cb9c37d1b998a5c1313cfa3e1b201433"
   }
 ]);
+
+workbox.routing.registerRoute(
+  // Cache CSS files.
+  /\.css$/,
+  // Use cache but update in the background.
+  new workbox.strategies.StaleWhileRevalidate({
+    // Use a custom cache name.
+    cacheName: 'css-cache',
+  })
+);
+
+workbox.routing.registerRoute(
+  // Cache image files.
+  /\.(?:png|jpg|jpeg|svg|gif)$/,
+  // Use the cache if it's available.
+  new workbox.strategies.CacheFirst({
+    // Use a custom cache name.
+    cacheName: 'image-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        // Cache only 20 images.
+        maxEntries: 20,
+        // Cache for a maximum of a week.
+        maxAgeSeconds: 7 * 24 * 60 * 60,
+      })
+    ],
+  })
+);

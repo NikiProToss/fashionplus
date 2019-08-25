@@ -8,7 +8,7 @@
     "watch-sass": "sass --style=compressed --no-source-map --watch assets/sass/all.scss assets/css/all.css",
     "workbox": "workbox injectManifest",
     "develop": "watch-sass",
-    "build": "purgecss && workbox"
+    "build": "npm run purgecss && npm run workbox"
   },
   "repository": {
     "type": "git",
