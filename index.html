@@ -11,6 +11,7 @@
     <title>Fashion Plus Салон Красоты</title>
     <link rel="icon" href="image/favicon.png" />
     <link rel="stylesheet" href="assets/css/all.css" />
+    <!-- for lazy loaded backgrounds -->
     <link rel="stylesheet" href="assets/css/visible.css">
   </head>
   <body>
@@ -1108,7 +1109,7 @@
       if ("serviceWorker" in navigator) {
         // Use the window load event to keep the page load performant
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("service-worker.js");
+          navigator.serviceWorker.register("fashionplus/service-worker.js");
         });
       }
     </script>
