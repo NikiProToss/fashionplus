@@ -123,6 +123,7 @@ h1 {
 }
 
 #reviews {
+  background-color: rgb(184, 184, 184);
   img {
     border-radius: 50%;
   }
@@ -174,6 +175,10 @@ h1 {
   background: transparent;
   .navbar-item {
     color: white;
+    .icons {
+      text-align: end; 
+      font-size: 2rem;
+    }
   }
   .buttons a {
     display: block;
@@ -233,6 +238,7 @@ h1 {
       width: 100% !important;
       height: 100% !important;
       display: none;
+      border: 0;
     }
   }
   @include touch {
@@ -413,6 +419,9 @@ h1 {
       display: block;
     }
     .columns .column:last-of-type {
+      text-align: center;
+    }
+    .columns .column .column:last-of-type {
       text-align: center;
     }
   }
@@ -661,6 +670,10 @@ h3 {
 #contacts {
   background-image: url(../../image/5.jpg);
   background-size: cover;
+  .icons {
+    text-align: end; 
+    font-size: 3rem;
+  }
   h2 {
     margin-bottom: 20px;
     font-size: 5rem;
@@ -727,7 +740,8 @@ h3 {
     columns column:nth-child(3) a {
       display: block !important;
     }
-    .columns .column:nth-child(3) a.contact-btn:last-of-type {
+    .columns .column:nth-child(3) a.contact-btn:last-of-type,
+    .columns .column:nth-child(3) a.contact-btn:first-of-type {
       display: block !important;
     }
   }
@@ -749,6 +763,10 @@ h3 {
       letter-spacing: 0;
     }
   }
+}
+
+iframe.map {
+  height: 600px;
 }
 
 /* Functionality */
