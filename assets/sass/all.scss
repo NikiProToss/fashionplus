@@ -36,7 +36,10 @@ h1 {
   }
 }
 #hero {
+  background-color: black;
   position: relative;
+  opacity: 1!important;
+  transition: 1s opacity ease-out;
   .call-to-action {
     position: absolute;
     bottom: 20%;
@@ -716,6 +719,8 @@ h3 {
     margin-left: 15px;
     font-size: 3rem;
     color: red;
+    max-width: 28px;
+    max-height: 28px;
   }
   .column:last-of-type a.contact-btn:last-of-type {
     display: none;
@@ -765,7 +770,7 @@ h3 {
   }
 }
 
-iframe.map {
+.map iframe {
   height: 600px;
 }
 
