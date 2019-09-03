@@ -127,6 +127,8 @@ h1 {
 
 #reviews {
   background-color: rgb(184, 184, 184);
+  padding-left: 0;
+  padding-right: 0;
   img {
     border-radius: 50%;
   }
@@ -231,7 +233,7 @@ h1 {
     position: relative;
     padding-bottom: 75%; /* This is the aspect ratio */
     height: 0;
-    overflow: hidden;
+    overflow: visible;
     max-width: 80vw;
     margin: 0 auto;
     iframe {

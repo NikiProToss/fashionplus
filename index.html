@@ -12,13 +12,15 @@
     <link rel="icon" href="image/favicon.png" />
     <style>
       #hero {
-        height: 1000px;
+        height: 1000vh;
         opacity: 0;
       }
     </style>
     <link rel="stylesheet" href="assets/css/all.css" />
     <!-- for lazy loaded backgrounds -->
     <link rel="stylesheet" href="assets/css/visible.css" />
+    <link rel="stylesheet" href="assets/css/csslider.css">
+    <link rel="stylesheet" href="assets/css/mobile-slider.css">
   </head>
   <body>
     <!-- Главное -->
@@ -130,21 +132,43 @@
     <section id="tours" class="section is-medium">
       <h2>Наши салоны</h2>
       <div class="tour">
-        <img
-          id="tourControl"
-          src="image/tourPlaceholder.jpg"
-          alt="photo tour placeholder"
-        />
-        <iframe
-          title="Салон красоты 360 тур"
-          id="myTour"
-          src="about:blank"
-          data-src="https://nikiprotoss.github.io/fashionplus_tour/"
-          width="600"
-          height="450"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <div class="csslider">
+          <input type="radio" name="slides" id="slides_1" checked />
+          <input type="radio" name="slides" id="slides_2" />
+          <input type="radio" name="slides" id="slides_3" />
+          <ul>
+              <li>
+                <img
+                  id="tourControl"
+                  src="image/tourPlaceholder.jpg"
+                  alt="photo tour placeholder"
+                />
+                <iframe
+                  title="Салон красоты 360 тур"
+                  id="myTour"
+                  src="about:blank"
+                  data-src="https://nikiprotoss.github.io/fashionplus_tour/"
+                  width="600"
+                  height="450"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe></li>
+              <li>Content of slide 2</li>
+              <li>Content of slide 3</li>
+          </ul>
+          <div class="arrows">
+              <label for="slides_1"></label>
+              <label for="slides_2"></label>
+              <label for="slides_3"></label>
+          </div>
+          <div class="navigation">
+            <div>
+                <label for="slides_1"></label>
+                <label for="slides_2"></label>
+                <label for="slides_3"></label>
+            </div>
+          </div>
+      </div>
       </div>
     </section>
     <!-- Основное -->
@@ -895,30 +919,63 @@
     <section class="section" id="reviews">
       <div class="container">
         <h2>Ваши отзывы</h2>
-        <div class="container">
-          <div class="columns">
-            <div class="column is-1"></div>
-            <div class="column is-3">
-              <img
-                class="lazy"
-                src="image/lazy/Кадр_фото_кліента.jpg"
-                data-src="image/Кадр_фото_кліента.jpg"
-                data-srcset="image/Кадр_фото_кліента.jpg"
-                alt="Фото клиента"
-              />
+        <div class="container slider">
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <div class="slides">
+              <div id="slide-1">
+                  <div class="columns">
+                    <div class="column is-1"></div>
+                    <div class="column is-3">
+                      <img
+                        class="lazy"
+                        src="image/lazy/Кадр_фото_кліента.jpg"
+                        data-src="image/Кадр_фото_кліента.jpg"
+                        data-srcset="image/Кадр_фото_кліента.jpg"
+                        alt="Фото клиента"
+                      />
+                    </div>
+                    <div class="column is-1"></div>
+                    <div class="column is-5">
+                      <p>
+                        Спасибо Вам большое. Ваши специалисты действительно творят
+                        чудеса! Честно, обращалась к многим, Вы единственные сделали
+                        результат! Огромное женское спасибо вам! Уже посоветовала Ваш
+                        центр подруге, так что ждите нового клиента, и сделайте так как
+                        мне!
+                      </p>
+                      <h4 class="title is-4">Светлана Иващенко</h4>
+                    </div>
+                    <div class="column is-2"></div>
+                  </div>
+              </div>
+              <div id="slide-2">
+                  <div class="columns">
+                    <div class="column is-1"></div>
+                    <div class="column is-3">
+                      <img
+                        class="lazy"
+                        src="image/lazy/Кадр_фото_кліента.jpg"
+                        data-src="image/Кадр_фото_кліента.jpg"
+                        data-srcset="image/Кадр_фото_кліента.jpg"
+                        alt="Фото клиента"
+                      />
+                    </div>
+                    <div class="column is-1"></div>
+                    <div class="column is-5">
+                      <p>
+                        Спасибо Вам большое. Ваши специалисты действительно творят
+                        чудеса! Честно, обращалась к многим, Вы единственные сделали
+                        результат! Огромное женское спасибо вам! Уже посоветовала Ваш
+                        центр подруге, так что ждите нового клиента, и сделайте так как
+                        мне!
+                      </p>
+                      <h4 class="title is-4">Светлана Иващенко</h4>
+                    </div>
+                    <div class="column is-2"></div>
+                  </div>
+              </div>
             </div>
-            <div class="column is-1"></div>
-            <div class="column is-5">
-              <p>
-                Спасибо Вам большое. Ваши специалисты действительно творят
-                чудеса! Честно, обращалась к многим, Вы единственные сделали
-                результат! Огромное женское спасибо вам! Уже посоветовала Ваш
-                центр подруге, так что ждите нового клиента, и сделайте так как
-                мне!
-              </p>
-              <h4 class="title is-4">Светлана Иващенко</h4>
-            </div>
-            <div class="column is-2"></div>
           </div>
         </div>
       </div>
@@ -945,6 +1002,7 @@
                     class="input"
                     type="text"
                     placeholder="Ваше имя"
+                    required
                   />
                 </div>
               </div>
@@ -968,6 +1026,7 @@
                           class="input"
                           type="tel"
                           placeholder="93 111 1111"
+                          required
                         />
                       </p>
                     </div>
