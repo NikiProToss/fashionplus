@@ -292,6 +292,7 @@ h1 {
   }
 }
 #tours {
+  overflow: hidden;
   @include mobile {
     background-image: url(../../image/Mobile-Maximum_02.jpg) !important;
     background-position: top center;

@@ -238,7 +238,8 @@
 @media screen and (max-width: 768px) {
   .csslider > .arrows label {
     box-shadow: inset 10px -10px 0 2px #c5b265;
-    padding: 25px;
+    padding: 15px;
+    overflow: hidden;
   }
   .csslider > ul {
     border: none;
@@ -282,5 +283,9 @@
 .csslider > .navigation label {
   padding: 20px;
   top: 30px;
+}
+.csslider > .arrows label {
+  box-shadow: inset 10px -10px 0 2px #3a3a3a;
+  margin: 0 0px;
 }
 }
