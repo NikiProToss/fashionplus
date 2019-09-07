@@ -1,0 +1,72 @@
+
+#tours {
+  overflow: hidden;
+  @include mobile {
+    background-image: url(../../image/Mobile-Maximum_02.jpg) !important;
+    background-position: top center;
+    padding-top: 50px!important;
+    h3 {
+      letter-spacing: 0;
+    }
+    h2 {
+      font-size: 2rem !important;
+      max-width: 80vw !important;
+    }
+  }
+  padding-top: 0;
+  img {
+    cursor: pointer;
+    width: 100%;
+  }
+  & > h2 {
+    text-transform: uppercase;
+    background: #000000a6;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+    color: #ffdc4d;
+    font-family: "Philosopher", sans-serif;
+  }
+  .tour {
+    position: relative;
+    padding-bottom: 75%; /* This is the aspect ratio */
+    height: 0;
+    overflow: visible;
+    max-width: 80vw;
+    margin: 0 auto;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      display: none;
+      border: 0;
+    }
+  }
+  @include touch {
+    h2 {
+      font-size: 4rem;
+      letter-spacing: 0 !important;
+    }
+  }
+  @include mobile {
+    .tour {
+      padding-bottom: 70%!important;
+    }
+  }
+  @include tablet {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    h2 {
+      max-width: 70vw;
+      font-size: 4rem;
+      letter-spacing: 0 !important;
+    }
+    .tour {
+      max-width: 70vw;
+      padding-bottom: 40% !important;
+    }
+  }
+}

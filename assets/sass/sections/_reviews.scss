@@ -1,0 +1,70 @@
+
+#reviews {
+  background-color: rgb(184, 184, 184);
+  padding-left: 0;
+  padding-right: 0;
+  .columns {
+    padding: 10px 0;
+  }
+  p {
+    text-align: left;
+  }
+  img {
+    border-radius: 50%;
+    width: 50%;
+    align-self: center;
+  }
+  h2 {
+    font-size: 3rem;
+    color: #434d56;
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+  }
+  h4.title {
+    font-weight: normal;
+    text-align: right;
+  }
+  .column.is-5 {
+    align-self: center;
+  }
+  .column.is-3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  @include mobile {
+    .column.is-3 {
+      text-align: center;
+    }
+    p {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    h4 {
+      max-width: 60%;
+      margin: auto;
+      margin-top: 20px;
+      text-align: center;
+      font-weight: 400;
+    }
+    img {
+      max-width: 70%;
+      border-radius: 50%;
+      width: 25%;
+    }
+  }
+  @include tablet {
+    p {
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  @include touch {
+    h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}
