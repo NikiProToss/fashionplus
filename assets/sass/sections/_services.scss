@@ -55,7 +55,7 @@
       & ~ .column:nth-of-type(2) {
         background-color: #ffffffcf;
       }
-      & ~ .controls label {
+      & ~ .controls label, a {
         background-color: rgba(230, 222, 222, 0.82);
         color: black;
       }
@@ -67,10 +67,10 @@
   .controls {
     position: absolute;
     left: 35%;
-    bottom: 25%;
+    top: 25%;
     z-index: 2;
     transition: all 0.3s ease-out;
-    label {
+    label, a {
       display: block;
       border-radius: 30px;
       background-color: rgba(0, 0, 0, 0.36);
@@ -84,16 +84,39 @@
       transition: all 0.3s ease-out;
     }
   }
+  input[id^="desc"]:checked ~ .modal-card label[for^="desc"] a,
+  input[id^="price"]:checked ~ .modal-card label[for^="price"] a {
+    border-bottom-color: #3273dc;
+    color: #3273dc;
+  }
+  .modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+    text-align:center;
+      &:target {
+      opacity:1;
+      pointer-events: auto;
+      }
+    }
+    .column .serv-content {
+      position: absolute;
+      top: 0;
+      margin-left: 20px;
+      margin-top: 10px;
+      overflow-y: auto;
+      max-height: 100%;
+      max-width: 45%;
+      width: 50%;
+    }
   .serv-content {
     display: none;
-    position: absolute;
-    top: 0;
-    margin-left: 20px;
-    margin-top: 10px;
-    overflow-y: auto;
-    max-height: 100%;
-    max-width: 45%;
-    width: 50%;
     h5,
     a {
       text-align: center;
@@ -118,7 +141,7 @@
     img {
       transition: all 0s !important;
     }
-    .controls label {
+    .controls label, a {
       transition: all 0s !important;
     }
 
@@ -128,8 +151,8 @@
   }
 }
 /* Functionality */
-#desc1:checked ~ .column #desc-content1,
-#price1:checked ~ .column #price-content1,
+#desc1:checked ~ .modal-card #desc-content1,
+#price1:checked ~ .modal-card #price-content1,
 #desc2:checked ~ .column #desc-content2,
 #price2:checked ~ .column #price-content2,
 #desc3:checked ~ .column #desc-content3,

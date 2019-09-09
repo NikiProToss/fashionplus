@@ -97,4 +97,13 @@
       letter-spacing: 0;
     }
   }
+  @include mobile {
+    padding: 3rem 0!important;
+    .column .icon img {
+      width: 24px!important;
+    }
+    h3 {
+      font-size: 1rem !important;
+    }
+  }
 }

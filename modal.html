@@ -1,0 +1,108 @@
+<div id="modal-visage" class="modal is-active">
+    <a href="#close"><div class="modal-background"></div></a>
+    <input class="log-ctrl" type="radio" name="serv1" id="desc1" checked />
+    <input class="log-ctrl" type="radio" name="serv1" id="price1" />
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <div class="tabs">
+          <ul>
+            <label for="desc1"><li><a>Описание</a></li></label>
+            <label for="price1"><li><a>Цены</a></li></label> 
+          </ul>
+        </div>
+      </header>
+      <section class="modal-card-body">
+        <!-- Content ... -->
+        <div class="serv-content" id="desc-content1">
+            Макияж – это искусство, требующее опыта и любви к своему делу.
+            Выполненный умелым визажистом с применением современных техник
+            нанесения, качественной косметики и профессиональных секретов он
+            способен преобразить человека, подчеркнув его достоинства и
+            естественную привлекательность. С мастерами визажа нашего салона
+            красоты клиенты находят, в первую очередь, взаимопонимание и
+            точное выполнение всех своих пожеланий. И как результат -
+            получают именно тот образ, который всегда хотели.
+        </div>
+
+        <div class="serv-content" id="price-content1">
+            <h5>Леси Украинки (Печерск)</h5>
+            <div class="columns is-mobile">
+              <div class="column">
+                Макияж в стиле Nude<br />
+                Дневной макияж
+                <br />
+                Вечерний макияж
+                <br />
+                Свадебный макияж
+              </div>
+              <div class="column">
+                200 <br />
+                600-750 <br />
+                1000 <br />
+                1000
+              </div>
+            </div>
+            <h5>Кудряшова (Соломенка)</h5>
+            <div class="columns is-mobile">
+              <div class="column">
+                Макияж в стиле Nude<br />
+                Дневной макияж
+                <br />
+                Вечерний макияж
+                <br />
+                Свадебный макияж
+              </div>
+              <div class="column">
+                200 <br />
+                400 <br />
+                500 <br />
+                800
+              </div>
+            </div>
+            <h5>Вильямса (Теремки)</h5>
+            <div class="columns is-mobile">
+              <div class="column">
+                Макияж в стиле Nude<br />
+                Дневной макияж
+                <br />
+                Вечерний макияж
+                <br />
+                Свадебный макияж
+              </div>
+              <div class="column">
+                200 <br />
+                250 <br />
+                400 <br />
+                700-800
+              </div>
+            </div>
+    </section>
+    <footer class="modal-card-foot">
+      <a href="#appointment" class="button is-success">Оформить заказ</a>
+    </footer>
+  </div>
+  <a href="#close"><button class="modal-close is-large" aria-label="close"></button></a>
+</div>
+<style>
+input[id^="desc"]:checked ~ .modal-card label[for^="desc"] a,
+  input[id^="price"]:checked ~ .modal-card label[for^="price"] a {
+    border-bottom-color: #3273dc;
+    color: #3273dc;
+  }
+  .modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+    text-align:center;
+      &:target {
+      opacity:1;
+      pointer-events: auto;
+      }
+    }
+    </style>
