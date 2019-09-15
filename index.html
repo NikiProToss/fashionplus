@@ -18,27 +18,19 @@
     </style>
     <link rel="stylesheet" href="assets/css/all.css" />
     <!-- for lazy loaded backgrounds -->
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NPS28CM');</script>
+<!-- End Google Tag Manager -->
   </head>
   <body>
-      <div id="menu" class="menu-wrap">
-        <a href="#menu" class="hamburger"><div></div></a>
-        <a href="#close" class="hamburger"><div></div></a>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#tours">Наши салоны</a></li>
-                  <li><a href="#main">Услуги</a></li>
-                  <li><a href="#specialists">Наши специалисты</a></li>
-                  <li><a href="#reviews">Отзывы</a></li>
-                  <li><a href="#appointment">Онлайн-запись</a></li>
-                  <li><a href="#contacts">Контакты</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPS28CM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <!-- Главное -->
     <section class="lazy-background" id="hero">
       <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -206,6 +198,26 @@
         </div>
       </form>
     </section>
+    <!-- Mobile menu -->
+    <div id="menu" class="menu-wrap">
+      <a href="#menu" class="hamburger"><div></div></a>
+      <a href="#close" class="hamburger"><div></div></a>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#tours">Наши салоны</a></li>
+                <li><a href="#main">Услуги</a></li>
+                <li><a href="#specialists">Наши специалисты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#appointment">Онлайн-запись</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 3D Туры -->
     <section id="tours" class="section is-medium">
       <h2>Наши салоны</h2>
@@ -291,12 +303,11 @@
     <!-- Услуги -->
     <section id="services" class="lazy-background">
       <div id="modal-visage" class="modal is-active">
-        <a href="#close"><div class="modal-background"></div></a>
         <input class="log-ctrl" type="radio" name="serv1" id="desc1" checked />
         <input class="log-ctrl" type="radio" name="serv1" id="price1" />
         <div class="modal-card">
           <header class="modal-card-head">
-            <div class="tabs">
+            <div class="tabs modal-card-title">
               <ul>
                 <label for="desc1"
                   ><li><a>Описание</a></li></label
@@ -306,6 +317,7 @@
                 >
               </ul>
             </div>
+            <a href="#close" class="delete" aria-label="close"></a>
           </header>
           <section class="modal-card-body">
             <!-- Content ... -->
@@ -390,9 +402,6 @@
             <a href="#appointment" class="button is-success">Оформить заказ</a>
           </footer>
         </div>
-        <a href="#close"
-          ><button class="modal-close is-large" aria-label="close"></button
-        ></a>
       </div>
       <!-- Обе колонки -->
       <div class="columns is-multiline">
