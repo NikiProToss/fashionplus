@@ -32,6 +32,11 @@
     justify-content: center;
     display: flex;
   }
+  @include tablet-only {
+    img {
+      width: 75%;
+    }
+  }
   @include mobile {
     .column.is-3 {
       text-align: center;
