@@ -6,7 +6,16 @@
   background-repeat-x: no-repeat;
   background-repeat: repeat-y;
   margin-top: -6.5px;
-  .table td:last-child {
+  tr {
+    background-color: #e3e3e3;
+  }
+  .table.is-striped tbody tr:not(.is-selected):nth-child(2n) {
+    background-color: #cfcbcb;
+  }
+  .table td:first-child {
+    text-align: left;
+  }
+  .table td {
     text-align: right;
   }
   img {
@@ -62,7 +71,7 @@
         background-color: rgba(230, 222, 222, 0.82);
         color: black;
       }
-      & ~ .column img {
+      & ~ .modal-card img {
         filter: brightness(0.5);
       }
     }
@@ -87,72 +96,14 @@
       transition: all 0.3s ease-out;
     }
   }
+  .tabs a {
+    border-bottom-color: black;
+    color: black;
+  }
   input[id^="desc"]:checked ~ .modal-card label[for^="desc"] a,
   input[id^="price"]:checked ~ .modal-card label[for^="price"] a {
-    border-bottom-color: #3273dc;
-    color: #3273dc;
-  }
-  .modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.2);
-    z-index: 99999;
-    opacity:0;
-    pointer-events: none;
-    text-align:center;
-      &:target {
-      opacity:1;
-      pointer-events: auto;
-      }
-    }
-
-    footer a {
-      display: block;
-      border-radius: 30px;
-      background-color: rgba(255, 11, 11, 0.8);
-      color: white;
-      border: none;
-      padding: 6px 18px;
-      cursor: pointer;
-      transition: all 0.3s ease-in;
-      &:hover {
-        background-color: #dbbc16;
-      }
-    }
-    .column .serv-content {
-      position: absolute;
-      top: 0;
-      margin-left: 20px;
-      margin-top: 10px;
-      overflow-y: auto;
-      max-height: 100%;
-      max-width: 45%;
-      width: 50%;
-    }
-  .serv-content {
-    display: none;
-    h5,
-    a {
-      text-align: center;
-      margin: 10px 0;
-      border-radius: 20px;
-      background-color: gold;
-      display: block;
-    }
-    .columns .column:last-of-type {
-      text-align: center;
-    }
-    .columns .column .column:last-of-type {
-      text-align: center;
-    }
-  }
-  [id^="desc"]:checked ~ .controls [for^="desc"],
-  [id^="price"]:checked ~ .controls [for^="price"] {
-    background-color: #ff0000b0;
     color: white;
+    border-bottom-color: white;
   }
   @include touch {
     img {
@@ -170,36 +121,36 @@
 /* Functionality */
 #desc1:checked ~ .modal-card #desc-content1,
 #price1:checked ~ .modal-card #price-content1,
-#desc2:checked ~ .column #desc-content2,
-#price2:checked ~ .column #price-content2,
-#desc3:checked ~ .column #desc-content3,
-#price3:checked ~ .column #price-content3,
-#desc4:checked ~ .column #desc-content4,
-#price4:checked ~ .column #price-content4,
-#desc5:checked ~ .column #desc-content5,
-#price5:checked ~ .column #price-content5,
-#desc6:checked ~ .column #desc-content6,
-#price6:checked ~ .column #price-content6,
-#desc7:checked ~ .column #desc-content7,
-#price7:checked ~ .column #price-content7,
-#desc8:checked ~ .column #desc-content8,
-#price8:checked ~ .column #price-content8,
-#desc9:checked ~ .column #desc-content9,
-#price9:checked ~ .column #price-content9,
-#desc10:checked ~ .column #desc-content10,
-#price10:checked ~ .column #price-content10,
-#desc11:checked ~ .column #desc-content11,
-#price11:checked ~ .column #price-content11,
-#desc12:checked ~ .column #desc-content12,
-#price12:checked ~ .column #price-content12,
-#desc13:checked ~ .column #desc-content13,
-#price13:checked ~ .column #price-content13,
-#desc14:checked ~ .column #desc-content14,
-#price14:checked ~ .column #price-content14,
-#desc15:checked ~ .column #desc-content15,
-#price15:checked ~ .column #price-content15,
-#desc16:checked ~ .column #desc-content16,
-#price16:checked ~ .column #price-content16 {
+#desc2:checked ~ .modal-card #desc-content2,
+#price2:checked ~ .modal-card #price-content2,
+#desc3:checked ~ .modal-card #desc-content3,
+#price3:checked ~ .modal-card #price-content3,
+#desc4:checked ~ .modal-card #desc-content4,
+#price4:checked ~ .modal-card #price-content4,
+#desc5:checked ~ .modal-card #desc-content5,
+#price5:checked ~ .modal-card #price-content5,
+#desc6:checked ~ .modal-card #desc-content6,
+#price6:checked ~ .modal-card #price-content6,
+#desc7:checked ~ .modal-card #desc-content7,
+#price7:checked ~ .modal-card #price-content7,
+#desc8:checked ~ .modal-card #desc-content8,
+#price8:checked ~ .modal-card #price-content8,
+#desc9:checked ~ .modal-card #desc-content9,
+#price9:checked ~ .modal-card #price-content9,
+#desc10:checked ~ .modal-card #desc-content10,
+#price10:checked ~ .modal-card #price-content10,
+#desc11:checked ~ .modal-card #desc-content11,
+#price11:checked ~ .modal-card #price-content11,
+#desc12:checked ~ .modal-card #desc-content12,
+#price12:checked ~ .modal-card #price-content12,
+#desc13:checked ~ .modal-card #desc-content13,
+#price13:checked ~ .modal-card #price-content13,
+#desc14:checked ~ .modal-card #desc-content14,
+#price14:checked ~ .modal-card #price-content14,
+#desc15:checked ~ .modal-card #desc-content15,
+#price15:checked ~ .modal-card #price-content15,
+#desc16:checked ~ .modal-card #desc-content16,
+#price16:checked ~ .modal-card #price-content16 {
   display: block;
 }
 span.icon {

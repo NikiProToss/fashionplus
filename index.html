@@ -18,19 +18,9 @@
     </style>
     <link rel="stylesheet" href="assets/css/all.css" />
     <!-- for lazy loaded backgrounds -->
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NPS28CM');</script>
-<!-- End Google Tag Manager -->
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPS28CM"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Главное -->
     <section class="lazy-background" id="hero">
       <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -47,36 +37,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </span>
             </div>
           </a>
-            <a
-              href="https://www.instagram.com/fashionplus_beautykyiv/"
-              target="_blank"
-              class="navbar-item"
-              rel="noopener"
-            >
-              <div class="icons">
-                <span class="icon has-text-info">
-                  <img
-                    src="image/instagram-logo-png-2427.png"
-                    alt="instagram logo"
-                  />
-                </span>
-              </div>
-            </a>
-            <a href="https://teleg.run/fashion_plus_pechersk" class="navbar-item" rel="noopener">
-              <div class="icons">
-                <span class="icon has-text-info">
-                  <img src="image/telegram.svg" alt="telegram logo" />
-                </span>
-              </div>
-            </a>
-            <a title="Viber" href="viber://chat?number=+380675991177" rel="noopener" class="navbar-item">
-              <div class="icons">
-                <span class="icon has-text-info">
-                  <img src="image/viber.svg" alt="viber logo" />
-                </span>
-              </div>
-            </a>
-        </div>
+          <a
+            href="https://www.instagram.com/fashionplus_beautykyiv/"
+            target="_blank"
+            class="navbar-item"
+            rel="noopener"
+          >
+            <div class="icons">
+              <span class="icon has-text-info">
+                <img
+                  src="image/instagram-logo-png-2427.png"
+                  alt="instagram logo"
+                />
+              </span>
+            </div>
+          </a>
+          <a
+            href="https://teleg.run/fashion_plus_pechersk"
+            class="navbar-item"
+            rel="noopener"
+          >
+            <div class="icons">
+              <span class="icon has-text-info">
+                <img src="image/telegram.svg" alt="telegram logo" />
+              </span>
+            </div>
+          </a>
+          <a
+            title="Viber"
+            href="viber://chat?number=+380675991177"
+            rel="noopener"
+            class="navbar-item"
+          >
+            <div class="icons">
+              <span class="icon has-text-info">
+                <img src="image/viber.svg" alt="viber logo" />
+              </span>
+            </div>
+          </a>
           <a
             role="button"
             class="navbar-burger burger"
@@ -206,13 +204,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div>
           <div>
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#tours">Наши салоны</a></li>
-                <li><a href="#main">Услуги</a></li>
-                <li><a href="#specialists">Наши специалисты</a></li>
-                <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#appointment">Онлайн-запись</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#tours">Наши салоны</a></li>
+              <li><a href="#main">Услуги</a></li>
+              <li><a href="#specialists">Наши специалисты</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#appointment">Онлайн-запись</a></li>
+              <li><a href="#contacts">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -249,13 +247,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 id="tourControl"
                 src="image/3dTourCover2.jpg"
                 alt="photo tour placeholder"
-              /></li>
+              />
+            </li>
             <li>
               <img
                 id="tourControl"
                 src="image/3dTourCover3.jpg"
                 alt="photo tour placeholder"
-              /></li>
+              />
+            </li>
           </ul>
           <div class="arrows">
             <label for="slides_1"></label>
@@ -274,6 +274,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </section>
     <!-- Основное -->
     <section id="main">
+      <!-- Modals -->
+      <div id="modal-ulthera" class="modal is-active">
+          ><div class="modal-background" style="background-image: url(image/1-big.jpg); filter: blur(5px)"></div>
+          <div class="modal-content">
+            <h2>Инновационный аппарат Альтера (Ulthera system USA)</h2>
+          </div>
+        </div>
+        <!-- Косметология -->
       <div class="columns" id="mainimg">
         <div class="column">
           <a href="http://fashionplus.tilda.ws/altera" rel="noopener">
@@ -302,7 +310,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </section>
     <!-- Услуги -->
     <section id="services" class="lazy-background">
+      <!-- Modals -->
+
+      <!-- Визаж -->
       <div id="modal-visage" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
         <input class="log-ctrl" type="radio" name="serv1" id="desc1" checked />
         <input class="log-ctrl" type="radio" name="serv1" id="price1" />
         <div class="modal-card">
@@ -322,14 +334,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <section class="modal-card-body">
             <!-- Content ... -->
             <div class="serv-content" id="desc-content1">
-              Макияж – это искусство, требующее опыта и любви к своему делу.
-              Выполненный умелым визажистом с применением современных техник
-              нанесения, качественной косметики и профессиональных секретов он
-              способен преобразить человека, подчеркнув его достоинства и
-              естественную привлекательность. С мастерами визажа нашего салона
-              красоты клиенты находят, в первую очередь, взаимопонимание и
-              точное выполнение всех своих пожеланий. И как результат - получают
-              именно тот образ, который всегда хотели.
+              Макияж – это целый вид искусства. Красивый и лёгкий дневной макияж
+              делает женщину счастливой и уверенной в себе, а вечерний макияж
+              сделает женщину богиней в важный день – праздник это или
+              фотосессия. Особенно важен свадебный макияж, который требует
+              совершенства в деталях. Наши профессиональные визажисты выполнят
+              макияж любой сложности, открыты к экспериментам и создадут
+              подходящий привлекательный образ.
             </div>
 
             <div class="serv-content" id="price-content1">
@@ -399,87 +410,1946 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </section>
           <footer class="modal-card-foot">
-            <a href="#appointment" class="button is-success">Оформить заказ</a>
+            <a href="#appointment" class="button">Оформить заказ</a>
           </footer>
         </div>
       </div>
+      <!-- Мужские стрижки -->
+      <div id="modal-male-haircut" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv2" id="desc2" checked />
+        <input class="log-ctrl" type="radio" name="serv2" id="price2" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc2"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price2"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content2">
+              Удачно подобранная мужская стрижка - настоящий залог успешности
+              мужчины. Стильная стрижка станет притягательной для женщин, а вот
+              аккуратная стрижка создаст мужчине серьезный образ, который
+              поможет в рабочих делах. В салоне наши профессионалы помогут Вам
+              подобрать идеальный подходящий вариант: будь то классическая,
+              спортивная или креативная стрижка - даже самый суровый клиент
+              останется довольным.
+            </div>
+
+            <div class="serv-content" id="price-content2">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка под насадку</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка модельная</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка волос</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Оформление бороды и усов</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Камуфлирование седины</td>
+                    <td>600</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка под насадку</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка модельная</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка волос</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Оформление бороды и усов</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Камуфлирование седины</td>
+                    <td>390</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка под насадку</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка модельная</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка волос</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Оформление бороды и усов</td>
+                    <td>180</td>
+                  </tr>
+                  <tr>
+                    <td>Камуфлирование седины</td>
+                    <td>350</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Татуаж -->
+      <div id="modal-tatoo" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv3" id="desc3" checked />
+        <input class="log-ctrl" type="radio" name="serv3" id="price3" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc3"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price3"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content3">
+              Вам надоело тратить много времени на марафет? Тогда перманентный
+              татуаж именно то, что Вам нужно! Аккуратный и ровный татуаж не
+              только облегчит жизнь, но и добавит изюминку в Ваш образ. Наш
+              салон предоставляет услугу перманентного татуажа бровей, губ и
+              век. Обращаясь к нам, Вы можете быть уверены в стерильности и
+              качестве наших инструментов. Мы поможем Вам подобрать нужную
+              форму, а также позаботимся о создании красивых и четких контуров.
+            </div>
+
+            <div class="serv-content" id="price-content3">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Татуаж Бровей</td>
+                    <td>от 2300; 2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Татуаж Межресничное пространство</td>
+                    <td>от 2200; 2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Татуаж Века</td>
+                    <td>от 2400; 2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Татуаж Губ</td>
+                    <td>от 2500; 2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Татуаж Коррекция 1-3 мес.</td>
+                    <td>50% от стоимости; 2 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Татуаж Коррекция Рефреш 3-12 мес.</td>
+                    <td>80% от стоимости; 3 часа</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка под насадку</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка модельная</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка волос</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Оформление бороды и усов</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Камуфлирование седины</td>
+                    <td>390</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка под насадку</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка модельная</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка волос</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Оформление бороды и усов</td>
+                    <td>180</td>
+                  </tr>
+                  <tr>
+                    <td>Камуфлирование седины</td>
+                    <td>350</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Наращивание ресниц -->
+      <div id="modal-resnici" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv4" id="desc4" checked />
+        <input class="log-ctrl" type="radio" name="serv4" id="price4" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc4"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price4"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content4">
+              Наращивание ресниц - отличная идея для тех, кто хочет освежить
+              свой образ и сэкономить время, так как отпадает необходимость в
+              использовании туши, ведь они и так выглядят эффектно. Взгляд
+              становится глубже и романтичнее, лицо становится женственнее и
+              выразительнее. Широкий спектр длин, толщин, изгибов, объемов и
+              цветов позволяют мастерам сделать любое наращивание – от самого
+              натурального и незаметного до самого яркого и роскошного. Из
+              материалов по уходу за ресницами мы используем ботокс,
+              ламинирование ресниц не делаем.
+            </div>
+
+            <div class="serv-content" id="price-content4">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Наращивание ресниц Классика</td>
+                    <td>700; 1-2 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 2Д</td>
+                    <td>800; 2-2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 2Д микс</td>
+                    <td>700; 2-2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 3Д</td>
+                    <td>800; 3-3,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Снятие ресниц</td>
+                    <td>200; 45 минут</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция ресниц</td>
+                    <td>600; 1-2 часа</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Наращивание ресниц Классика</td>
+                    <td>600; 1-2 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 2Д</td>
+                    <td>700; 2-2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 2Д микс</td>
+                    <td>700; 2-2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 3Д</td>
+                    <td>800; 3-3,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Снятие ресниц</td>
+                    <td>150; 45 минут</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция ресниц</td>
+                    <td>600-700; 1-2 часа</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Наращивание ресниц Классика</td>
+                    <td>500-550; 1-2 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 2Д</td>
+                    <td>600; 2,5 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Наращивание ресниц 3Д</td>
+                    <td>1700; 2,5-3 часа</td>
+                  </tr>
+                  <tr>
+                    <td>Ботокс ресниц</td>
+                    <td>750; 1 час</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Детские стрижки -->
+      <div id="modal-kids" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv5" id="desc5" checked />
+        <input class="log-ctrl" type="radio" name="serv5" id="price5" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc5"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price5"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content5">
+              Детские стрижки довольно важны, ведь выглядеть ухоженно и стильно
+              – потребность не только взрослых, но и детей. Если у Вас веселый и
+              подвижный ребенок, важно подобрать удобную и практичную стрижку,
+              чтобы она не мешала при занятиях спортом или гимнастикой.
+              Обращаясь в наш салон, Вы можете быть уверены, что наши
+              парикмахеры помогут подобрать Вашему ребенку стильную и
+              оригинальную стрижку и позаботятся о том, чтобы ребенок был
+              доволен.
+            </div>
+
+            <div class="serv-content" id="price-content5">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка детская (до10 лет)</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Детская стрижка (машинка)</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Детская стрижка челки</td>
+                    <td>150</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка детская (до10 лет)</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Детская стрижка (машинка)</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Детская стрижка челки</td>
+                    <td>100</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка детская (до10 лет)</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Детская стрижка (машинка)</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Детская стрижка челки</td>
+                    <td>70</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Услуги стилиста -->
+      <div id="modal-stylist" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv6" id="desc6" checked />
+        <input class="log-ctrl" type="radio" name="serv6" id="price6" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc6"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price6"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content6">
+              Порой очень трудно придумать себе интересный и эффектный образ: на
+              это не хватает либо времени, либо фантазии. Вовсе не обязательно
+              бежать в дорогие магазины и покупать брендовые вещи. Главное –
+              выработать собственный стиль, уметь комбинировать одежду, которая
+              бы подошла вам по фигуре и цветотипу. Наш салон предоставляет
+              услугу персонального стилиста - он поможет Вам и подберет самые
+              подходящие для Вас образы.
+            </div>
+
+            <div class="serv-content" id="price-content6">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 1 длина</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 2 длина</td>
+                    <td>800</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 3 длина</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 4 длина</td>
+                    <td>1300</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 1 длина</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 2 длина</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 3 длина</td>
+                    <td>850</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 4 длина</td>
+                    <td>1000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 2 длина</td>
+                    <td>650-700</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 3 длина</td>
+                    <td>700-850</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя/свадебная прическа 4 длина</td>
+                    <td>850-1000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Маникюр -->
+      <div id="modal-manicure" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv7" id="desc7" checked />
+        <input class="log-ctrl" type="radio" name="serv7" id="price7" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc7"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price7"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content7">
+              В современном мире самая востребованная бьюти-услуга - это
+              маникюр. Эта гигиеническо-косметическая процедура необходима
+              каждой девушке, ведь именно благодаря ей ручки становятся самыми
+              красивыми и ухоженными. Маникюр - залог здоровых ногтей. Мы
+              выполняем классический маникюр, с покрытием и разнообразным
+              дизайном. Также мы всегда ждем наших дорогих клиентов на
+              коррекцию. Предоставляем услугу наращивания ногтей.
+            </div>
+
+            <div class="serv-content" id="price-content7">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Маникюр классический</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр аппаратный</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр европейский</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр комбинированый</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр мужской</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр детский</td>
+                    <td>200</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Маникюр классический</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр аппаратный</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр европейский</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр комбинированый</td>
+                    <td>230</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр мужской</td>
+                    <td>230</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр детский</td>
+                    <td>100-200</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Маникюр классический</td>
+                    <td>120</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр аппаратный</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр европейский</td>
+                    <td>80</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр комбинированый</td>
+                    <td>140</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр мужской</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр детский</td>
+                    <td>150</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Лазерная Эпиляция -->
+      <div id="modal-epilation" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv8" id="desc8" checked />
+        <input class="log-ctrl" type="radio" name="serv8" id="price8" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc8"
+                  ><li><a>Описание</a></li></label
+                >
+                <!-- <label for="price8"
+                  ><li><a>Цены</a></li></label
+                > -->
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content8">
+              Каждая представительница прекрасного пола мечтает об идеально
+              гладкой коже ног. Но такого эффекта сложно добиться при помощью
+              бритвы, а восковая депиляция переносится некоторыми особо
+              болезненно. Наш салон предлагает клиентам услугу - лазерная
+              эпиляция ног. Данная процедура совершенно безопасна, и если Вы
+              хотите иметь гладкую кожу на долгое время, то процедура лазерной
+              эпиляции - это именно то, что Вам необходимо.
+            </div>
+
+            <div class="serv-content" id="price-content8">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Депиляция бедер</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция бикини</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция глубокого бикини</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция усиков</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция лица</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция подбородка</td>
+                    <td>60</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция шеи</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция спины</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция груди</td>
+                    <td>60</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция живота (белая линия)</td>
+                    <td>70</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция живота (полностью)</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция подмышки</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция ног до колена</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция ног полностью</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция ягодиц</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция рук до локтя</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция рук полностью</td>
+                    <td>300</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Депиляция бедер</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция бикини</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция глубокого бикини</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция усиков</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция лица</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция подбородка</td>
+                    <td>60</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция шеи</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция спины</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция груди</td>
+                    <td>60</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция живота (белая линия)</td>
+                    <td>70</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция живота (полностью)</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция подмышки</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция ног до колена</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция ног полностью</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция ягодиц</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция рук до локтя</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Депиляция рук полностью</td>
+                    <td>250</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Женские стрижки -->
+      <div id="modal-female-haircut" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input class="log-ctrl" type="radio" name="serv9" id="desc9" checked />
+        <input class="log-ctrl" type="radio" name="serv9" id="price9" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc9"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price9"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content9">
+              Лучший способ освежить образ женщины - это подстричь волосы.
+              Начиная с подравнивания кончиков и заканчивая совсем короткой
+              стрижкой. Регулярные стрижки нужны и важны, ведь со временем от
+              сушки феном, завивки плойкой, структура волос портится и они
+              начинают тускнеть. Наши профессиональные парикмахеры выслушают и
+              помогут подобрать нужную стрижку. Например, девушки с короткими
+              волосами выглядят эффектно и стильно, тем более это удобно и
+              практично. А девушкам с длинными волосами важно регулярно
+              подрезать кончики, чтобы избежать посеченных волос.
+            </div>
+
+            <div class="serv-content" id="price-content9">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка женская + укладка 1 длинна</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 2 длинна</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 3 длинна</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 4 длинна</td>
+                    <td>800</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка женская + укладка 1 длинна</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 2 длинна</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 3 длинна</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 4 длинна</td>
+                    <td>700</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Стрижка женская + укладка 1 длинна</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 2 длинна</td>
+                    <td>380</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 3 длинна</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Стрижка женская + укладка 4 длинна</td>
+                    <td>450</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Лечение волос -->
+      <div id="modal-hair-healing" class="modal is-active">
+          <a href="#close"><div class="modal-background"></div></a>
+          <input
+            class="log-ctrl"
+            type="radio"
+            name="serv10"
+            id="desc10"
+            checked
+          />
+          <input class="log-ctrl" type="radio" name="serv10" id="price10" />
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <div class="tabs modal-card-title">
+                <ul>
+                  <label for="desc10"
+                    ><li><a>Описание</a></li></label
+                  >
+                  <label for="price10"
+                    ><li><a>Цены</a></li></label
+                  >
+                </ul>
+              </div>
+              <a href="#close" class="delete" aria-label="close"></a>
+            </header>
+            <section class="modal-card-body">
+              <!-- Content ... -->
+              <div class="serv-content" id="desc-content10">
+                  Каждая девушка мечтает о красивых, ухоженных и сияющих волосах. Но со временем наши волосы тускнеют, слабеют, становятся тонкими и непослушными. В этом случае помогает аминокислотное разглаживание волос, которое выравнивает и восстанавливает поврежденные волосы, придает волосам здоровый вид, естественный блеск, гладкость и  шелковистость. Процедура Brasilian Blowout воплощает эти мечты в реальность - после неё идеально гладкие, струящиеся волосы — и нет больше никаких проблем с пушистостью или торчащими прядями. В состав не входят грубые химикаты, вызывающие аллергию или раздражение кожи головы, что делает эту процедуру безопасной.
+              </div>
+              <div class="serv-content" id="price-content10">
+                <h5>Леси Украинки (Печерск)</h5>
+                <table class="table is-fullwidth is-striped">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>Кератиновое восстановление волос BRAZILIAN BLOWOUT (USA)</td>
+                      <td>Кератиновое выпрямление</td>
+                    </tr>
+                    <tr>
+                      <td>Челка</td>
+                      <td>1000</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>1я длинна</td>
+                      <td>2100</td>
+                      <td>800</td>
+                    </tr>
+                    <tr>
+                      <td>2я длинна</td>
+                      <td>3000</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td>3я длинна</td>
+                      <td>4800</td>
+                      <td>1800</td>
+                    </tr>
+                    <tr>
+                      <td>4я длинна</td>
+                      <td>5600</td>
+                      <td>2500</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5>Вильямса (Теремки)</h5>
+                <table class="table is-fullwidth is-striped">
+                  <tbody>
+                      <tr>
+                        <td></td>
+                        <td>Реконструкция волос Kirame-Rame-Hahonico</td>
+                      </tr>
+                      <tr>
+                        <td>Короткие волосы</td>
+                        <td>500</td>
+                      </tr>
+                      <tr>
+                        <td>Средняя длина</td>
+                        <td>800</td>
+                      </tr>
+                      <tr>
+                        <td>Длинные волосы</td>
+                        <td>1000</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <footer class="modal-card-foot">
+              <a href="#appointment" class="button">Оформить заказ</a>
+            </footer>
+          </div>
+        </div>
+      <!-- Депиляция -->
+      <div id="modal-depilation" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input
+          class="log-ctrl"
+          type="radio"
+          name="serv11"
+          id="desc11"
+          checked
+        />
+        <input class="log-ctrl" type="radio" name="serv11" id="price11" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc11"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price11"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content11">
+                Все знают, что секрет гладких ножек состоит в правильно выполненной депиляции. Но в домашних условиях не всегда получается сделать всё правильно, в результате имеем раздражение кожи и плохое настроение. В нашем салоне мы используем обычный воск. На кожу наносится расплавленный воск, а сверху – полоски ткани или специальной бумаги. Легкое движение опытной руки мастера – и лишней растительности будто и не было. Эффект шелковой кожи сохраняется от 2 до 4 недель.
+            </div>
+
+            <div class="serv-content" id="price-content11">
+                <h5>Леси Украинки (Печерск)</h5>
+                <table class="table is-fullwidth is-striped">
+                  <tbody>
+                    <tr>
+                      <td>Депиляция бедер</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция бикини</td>
+                      <td>350</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция глубокого бикини</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция усиков</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция лица</td>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция подбородка</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция шеи</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция спины</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция груди</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция живота (белая линия)</td>
+                      <td>70</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция живота (полностью)</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция подмышки</td>
+                      <td>150</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция ног до колена</td>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция ног полностью</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция ягодиц</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция рук до локтя</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция рук полностью</td>
+                      <td>300</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5>Кудряшова (Соломенка)</h5>
+                <table class="table is-fullwidth is-striped">
+                  <tbody>
+                    <tr>
+                      <td>Депиляция бедер</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция бикини</td>
+                      <td>350</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция глубокого бикини</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция усиков</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция лица</td>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция подбородка</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция шеи</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция спины</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция груди</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция живота (белая линия)</td>
+                      <td>70</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция живота (полностью)</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция подмышки</td>
+                      <td>150</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция ног до колена</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция ног полностью</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция ягодиц</td>
+                      <td>150</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция рук до локтя</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция рук полностью</td>
+                      <td>250</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Брови -->
+      <div id="modal-eyebrows" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input
+          class="log-ctrl"
+          type="radio"
+          name="serv12"
+          id="desc12"
+          checked
+        />
+        <input class="log-ctrl" type="radio" name="serv12" id="price12" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc12"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price12"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content12">
+              Брови – важная часть лица, поэтому они должны быть всегда
+              ухоженными. Удачно подобранная форма бровей и равномерное
+              окрашивание делает брови аккуратными и делает лицо женщины более
+              выразительным. Ждем наших красавиц на окрашивание бровей,
+              моделирование и коррекцию, вне зависимости густые брови или
+              светлые и тонкие. Также по желанию, предлагаем услугу окрашивания
+              ресниц.
+            </div>
+            <div class="serv-content" id="price-content12">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Коррекция и окрашивание бровей и ресниц</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция и окрашивание бровей</td>
+                    <td>550</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция бровей</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей Краска</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей Хна</td>
+                    <td>350</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Коррекция бровей</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей Краска</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей Хна</td>
+                    <td>160</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Коррекция бровей</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей Краска</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей Хна</td>
+                    <td>140</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Укладка волос -->
+      <div id="modal-hair-styling" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input
+          class="log-ctrl"
+          type="radio"
+          name="serv13"
+          id="desc13"
+          checked
+        />
+        <input class="log-ctrl" type="radio" name="serv13" id="price13" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc13"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price13"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content13">
+              Красивая и модная укладка волос – это залог идеальной прически и
+              роскошного внешнего вида. Укладка волос помогает женщинам обрести
+              чувство стиля, а также гораздо более привлекательный внешний вид и
+              уверенность в себе, ведь выглядеть ухоженной всегда приятно! В
+              салоне наши профессиональные парикмахеры предложат Вам большое
+              количество подходящих укладок и помогут создать Вам образ на
+              каждый день и в любой праздник жизни.
+            </div>
+            <div class="serv-content" id="price-content13">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Укладка Повседневная 1 длина</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 2 длина</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 3 длина</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 4 длина</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 1 длина</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 2 длина</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 3 длина</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 4 длина</td>
+                    <td>800</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Укладка Повседневная 1 длина</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 2 длина</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 3 длина</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 4 длина</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 1 длина</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 2 длина</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 3 длина</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Накрутка 4 длина</td>
+                    <td>650</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Укладка Повседневная 1 длина</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 2 длина</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 3 длина</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Укладка Повседневная 4 длина</td>
+                    <td>350</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Окрашивание волос --><div id="modal-hair-coloring" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input
+          class="log-ctrl"
+          type="radio"
+          name="serv14"
+          id="desc14"
+          checked
+        />
+        <input class="log-ctrl" type="radio" name="serv14" id="price14" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc14"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price14"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content14">
+                Окрашивание волос позволяет женщине не только выразить свою индивидуальность, а еще поддержать здоровье волос. Ведь после окрашивания волосы приобретают сияющий блеск, становятся толще и легче поддаются укладке. Наши парикмахеры помогут подобрать Вам идеальный цвет и оттенок, сделают сам процесс покраски волос приятным и постараются чтобы конечный результат превзошел все Ваши ожидания.
+                Предлагаем такие услуги, как: окрашивание в один тон, окрашивание корней, тонирование, мелирование (пудра, сливки, художественное окрашивание), омбре, шатуш, балаяж, снятие оттенка, обесцвечивание, блонд-мытье, блондирование, уменьшение интенсивности.
+            </div>
+            <div class="serv-content" id="price-content14">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>Wella</td>
+                    <td>Ducastel</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание волос тон в тон корни</td>
+                    <td>1000</td>
+                    <td>900</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание волос тон в тон 1 длина</td>
+                    <td>1200</td>
+                    <td>1100</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание волос тон в тон 2 длина</td>
+                    <td>1400</td>
+                    <td>1300</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание волос тон в тон 3 длина</td>
+                    <td>1600</td>
+                    <td>1500</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание волос тон в тон 4 длина</td>
+                    <td>1900</td>
+                    <td>1800</td>
+                  </tr>
+                  <tr>
+                    <td>Тонирование волос 1 длина</td>
+                    <td>800</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>Тонирование волос 2 длина</td>
+                    <td>900</td>
+                    <td>800</td>
+                  </tr>
+                  <tr>
+                    <td>Тонирование волос 3 длина</td>
+                    <td>1000</td>
+                    <td>900</td>
+                  </tr>
+                  <tr>
+                    <td>Тонирование волос 4 длина</td>
+                    <td>1100</td>
+                    <td>1000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                    <tr>
+                      <td></td>
+                      <td>Goldwell</td>
+                      <td>Mirella</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон корни</td>
+                      <td>800</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 1 длина</td>
+                      <td>900</td>
+                      <td>700</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 2 длина</td>
+                      <td>1200</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 3 длина</td>
+                      <td>1400</td>
+                      <td>1200</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 4 длина</td>
+                      <td>1600</td>
+                      <td>1400</td>
+                    </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                    <tr>
+                      <td></td>
+                      <td>Mirella</td>
+                      <td>T-LAB Professional</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон корни</td>
+                      <td>680</td>
+                      <td>750</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 1 длина</td>
+                      <td>880</td>
+                      <td>950</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 2 длина</td>
+                      <td>950</td>
+                      <td>1100</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 3 длина</td>
+                      <td>1200</td>
+                      <td>1400</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание волос тон в тон 4 длина</td>
+                      <td>1300</td>
+                      <td>1550</td>
+                    </tr>
+                    <tr>
+                      <td>Тонирование волос 1 длина</td>
+                      <td>580</td>
+                      <td>680</td>
+                    </tr>
+                    <tr>
+                      <td>Тонирование волос 2 длина</td>
+                      <td>800</td>
+                      <td>900</td>
+                    </tr>
+                    <tr>
+                      <td>Тонирование волос 3 длина</td>
+                      <td>1000</td>
+                      <td>1100</td>
+                    </tr>
+                    <tr>
+                      <td>Тонирование волос 4 длина</td>
+                      <td>1150</td>
+                      <td>1250</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Массаж и уход за телом -->
+      <div id="modal-massage" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input
+          class="log-ctrl"
+          type="radio"
+          name="serv15"
+          id="desc15"
+          checked
+        />
+        <input class="log-ctrl" type="radio" name="serv15" id="price15" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc15"
+                  ><li><a>Описание</a></li></label
+                >
+                <!-- <label for="price15"
+                    ><li><a>Цены</a></li></label
+                  > -->
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content15">
+              Массаж зачастую носит оздоровительно-профилактические свойства,
+              помогает провести полную перезагрузку и расслабить мышцы, ведь это
+              так необходимо. Видимые результаты уже после первого сеанса -
+              улучшается самочувствие, клиент становится бодрым и энергичным.
+              Наши профессиональные массажисты выполняют массаж любой сложности:
+              общий, спины, релакс, медовый, лимфодренажный, спортивный,
+              антицеллюлитный, сегментарный, скульптурный. Мы предлагаем все
+              виды обёртываний, виски-пеленание и скрабирование тела.
+            </div>
+            <!-- <div class="serv-content" id="price-content15">
+                  <h5>Леси Украинки (Печерск)</h5>
+                  <table class="table is-fullwidth is-striped">
+                    <tbody>
+                      <tr>
+                        <td>Укладка Повседневная 1 длина</td>
+                        <td>300</td>
+                      </tr>
+                      <tr>
+                        <td>Укладка Повседневная 2 длина</td>
+                        <td>400</td>
+                      </tr>
+                      <tr>
+                        <td>Укладка Повседневная 3 длина</td>
+                        <td>500</td>
+                      </tr>
+                      <tr>
+                        <td>Укладка Повседневная 4 длина</td>
+                        <td>600</td>
+                      </tr>
+                      <tr>
+                        <td>Накрутка 1 длина</td>
+                        <td>500</td>
+                      </tr>
+                      <tr>
+                        <td>Накрутка 2 длина</td>
+                        <td>600</td>
+                      </tr>
+                      <tr>
+                        <td>Накрутка 3 длина</td>
+                        <td>700</td>
+                      </tr>
+                      <tr>
+                        <td>Накрутка 4 длина</td>
+                        <td>800</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h5>Кудряшова (Соломенка)</h5>
+                  <table class="table is-fullwidth is-striped">
+                    <tbody>
+                        <tr>
+                          <td>Укладка Повседневная 1 длина</td>
+                          <td>250</td>
+                        </tr>
+                        <tr>
+                          <td>Укладка Повседневная 2 длина</td>
+                          <td>300</td>
+                        </tr>
+                        <tr>
+                          <td>Укладка Повседневная 3 длина</td>
+                          <td>400</td>
+                        </tr>
+                        <tr>
+                          <td>Укладка Повседневная 4 длина</td>
+                          <td>500</td>
+                        </tr>
+                        <tr>
+                          <td>Накрутка 1 длина</td>
+                          <td>300</td>
+                        </tr>
+                        <tr>
+                          <td>Накрутка 2 длина</td>
+                          <td>400</td>
+                        </tr>
+                        <tr>
+                          <td>Накрутка 3 длина</td>
+                          <td>500</td>
+                        </tr>
+                        <tr>
+                          <td>Накрутка 4 длина</td>
+                          <td>650</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                  <h5>Вильямса (Теремки)</h5>
+                  <table class="table is-fullwidth is-striped">
+                    <tbody>
+                        <tr>
+                          <td>Укладка Повседневная 1 длина</td>
+                          <td>200</td>
+                        </tr>
+                        <tr>
+                          <td>Укладка Повседневная 2 длина</td>
+                          <td>250</td>
+                        </tr>
+                        <tr>
+                          <td>Укладка Повседневная 3 длина</td>
+                          <td>300</td>
+                        </tr>
+                        <tr>
+                          <td>Укладка Повседневная 4 длина</td>
+                          <td>350</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div> -->
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+      <!-- Педикюр -->
+      <div id="modal-pedicure" class="modal is-active">
+        <a href="#close"><div class="modal-background"></div></a>
+        <input
+          class="log-ctrl"
+          type="radio"
+          name="serv16"
+          id="desc16"
+          checked
+        />
+        <input class="log-ctrl" type="radio" name="serv16" id="price16" />
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <div class="tabs modal-card-title">
+              <ul>
+                <label for="desc16"
+                  ><li><a>Описание</a></li></label
+                >
+                <label for="price16"
+                  ><li><a>Цены</a></li></label
+                >
+              </ul>
+            </div>
+            <a href="#close" class="delete" aria-label="close"></a>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="serv-content" id="desc-content16">
+                Зима сейчас или лето - совершенно не важно, ножки должны быть ухоженными, опрятными и изящными. Это неотъемлемая и полезная процедура ухода за телом, ведь педикюр не только обеспечивает красоту Ваших ножек, но и помогает поддержать их здоровье. Для клиентов мы предлагаем услугу педикюра. В нашем салоне Вы можете сделать классический педикюр + покрытие, также мы выполняем полировку пяточек, которая уберет ороговевший слой и сделает кожу Ваших ножек более нежной и приятной на ощупь.
+            </div>
+            <div class="serv-content" id="price-content16">
+              <h5>Леси Украинки (Печерск)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                  <tr>
+                    <td>Педикюр кислотой</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Аппаратный педикюр</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Комбинированный педикюр</td>
+                    <td>550</td>
+                  </tr>
+                  <tr>
+                    <td>Педикюр классический</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Педикюр мужской</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Педикюр детский</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Парафинотерапия стоп</td>
+                    <td>300</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>Кудряшова (Соломенка)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                    <tr>
+                      <td>Педикюр кислотой</td>
+                      <td>450</td>
+                    </tr>
+                    <tr>
+                      <td>Аппаратный педикюр</td>
+                      <td>650</td>
+                    </tr>
+                    <tr>
+                      <td>Комбинированный педикюр</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр классический</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр мужской</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр детский</td>
+                      <td>150</td>
+                    </tr>
+                    <tr>
+                      <td>Парафинотерапия стоп</td>
+                      <td>200</td>
+                    </tr>
+                </tbody>
+              </table>
+              <h5>Вильямса (Теремки)</h5>
+              <table class="table is-fullwidth is-striped">
+                <tbody>
+                    <tr>
+                      <td>Аппаратный педикюр</td>
+                      <td>300</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр классический</td>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр мужской</td>
+                      <td>350</td>
+                    </tr>
+                    <tr>
+                      <td>Парафинотерапия стоп</td>
+                      <td>150</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <a href="#appointment" class="button">Оформить заказ</a>
+          </footer>
+        </div>
+      </div>
+
       <!-- Обе колонки -->
       <div class="columns is-multiline">
         <!-- колонка первая -->
         <div class="column">
           <!-- Визаж -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv1" id="desc1" />
-            <input class="log-ctrl" type="radio" name="serv1" id="price1" />
             <div class="controls">
               <a href="#modal-visage">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content1">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content1">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Макияж в стиле Nude<br />
-                    Дневной макияж
-                    <br />
-                    Вечерний макияж
-                    <br />
-                    Свадебный макияж
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    600-750 <br />
-                    1000 <br />
-                    1000
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Макияж в стиле Nude<br />
-                    Дневной макияж
-                    <br />
-                    Вечерний макияж
-                    <br />
-                    Свадебный макияж
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    400 <br />
-                    500 <br />
-                    800
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Макияж в стиле Nude<br />
-                    Дневной макияж
-                    <br />
-                    Вечерний макияж
-                    <br />
-                    Свадебный макияж
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    250 <br />
-                    400 <br />
-                    700-800
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -492,78 +2362,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Male haircut -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv2" id="desc2" />
-            <input class="log-ctrl" type="radio" name="serv2" id="price2" />
             <div class="controls">
-              <label for="desc2">Подробнее</label>
-              <label for="price2">Цены</label>
+              <a href="#modal-male-haircut">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content2">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content2">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка под насадку<br />
-                    Стрижка модельная<br />
-                    Укладка волос <br />
-                    Оформление бороды и усов <br />
-                    Камуфлирование седины
-                  </div>
-                  <div class="column">
-                    300 <br />
-                    500 <br />
-                    300 <br />
-                    300 <br />
-                    600
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка под насадку<br />
-                    Стрижка модельная<br />
-                    Укладка волос <br />
-                    Оформление бороды и усов <br />
-                    Камуфлирование седины
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    350 <br />
-                    150 <br />
-                    200 <br />
-                    390
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка под насадку<br />
-                    Стрижка модельная<br />
-                    Укладка волос <br />
-                    Оформление бороды и усов <br />
-                    Камуфлирование седины
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    250 <br />
-                    150 <br />
-                    180 <br />
-                    350
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -576,84 +2378,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Tatoo -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv3" id="desc3" />
-            <input class="log-ctrl" type="radio" name="serv3" id="price3" />
             <div class="controls">
-              <label for="desc3">Подробнее</label>
-              <label for="price3">Цены</label>
+              <a href="#modal-tatoo">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content3">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content3">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Татуаж Бровей<br />
-                    Татуаж Межресничное пространство<br />
-                    Татуаж Века <br />
-                    Татуаж Губ <br />
-                    Татуаж Коррекция 1-3 мес. <br />
-                    Татуаж Коррекция Рефреш 3-12 мес.
-                  </div>
-                  <div class="column">
-                    от 2300; время - 2,5 часа <br />
-                    от 2200; время - 2,5 часа <br />
-                    от 2400; время - 2,5 часа<br />
-                    от 2500; время - 2,5 часа <br />
-                    50% от стоимости; время - 2 часа <br />
-                    80% от стоимости; время - 3 часа <br />
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Татуаж Бровей<br />
-                    Татуаж Межресничное пространство<br />
-                    Татуаж Века <br />
-                    Татуаж Губ <br />
-                    Татуаж Коррекция 1-3 мес. <br />
-                    Татуаж Коррекция Рефреш 3-12 мес.
-                  </div>
-                  <div class="column">
-                    от 2300; время - 2,5 часа <br />
-                    от 2200; время - 2,5 часа <br />
-                    от 2400; время - 2,5 часа<br />
-                    от 2500; время - 2,5 часа <br />
-                    50% от стоимости; время - 2 часа <br />
-                    80% от стоимости; время - 3 часа <br />
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Татуаж Бровей<br />
-                    Татуаж Межресничное пространство<br />
-                    Татуаж Века <br />
-                    Татуаж Губ <br />
-                    Татуаж Коррекция 1-3 мес. <br />
-                    Татуаж Коррекция Рефреш 3-12 мес.
-                  </div>
-                  <div class="column">
-                    от 1700; время - 2,5 часа <br />
-                    от 1200; время - 2,5 часа <br />
-                    от 1400; время - 2,5 часа<br />
-                    от 2000; время - 2,5 часа <br />
-                    50% от стоимости; время - 2 часа <br />
-                    80% от стоимости; время - 3 часа <br />
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -666,80 +2394,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Наращивание ресниц -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv4" id="desc4" />
-            <input class="log-ctrl" type="radio" name="serv4" id="price4" />
             <div class="controls">
-              <label for="desc4">Подробнее</label>
-              <label for="price4">Цены</label>
+              <a href="#modal-resnici">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content4">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content4">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Наращивание ресниц Классика<br />
-                    Наращивание ресниц 2Д <br />
-                    Наращивание ресниц 2Д микс<br />
-                    Наращивание ресниц 3Д <br />
-                    Снятие ресниц<br />
-                    Коррекция ресниц
-                  </div>
-                  <div class="column">
-                    700; время - 1-2 часа <br />
-                    800; время - 2-2,5 часа <br />
-                    700; время - 2-2,5 часа<br />
-                    800; время - 3-3.5 часа <br />
-                    200; время - 45 минут <br />
-                    600; время - 1-2 часа <br />
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Наращивание ресниц Классика<br />
-                    Наращивание ресниц 2Д <br />
-                    Наращивание ресниц 2Д микс<br />
-                    Наращивание ресниц 3Д <br />
-                    Снятие ресниц<br />
-                    Коррекция ресниц
-                  </div>
-                  <div class="column">
-                    600; время - 1-2 часа <br />
-                    700; время - 2-2,5 часа <br />
-                    700; время - 2-2,5 часа<br />
-                    800; время - 3-3.5 часа <br />
-                    150; время - 45 минут <br />
-                    600-700; время - 1-2 часа <br />
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Наращивание ресниц Классика<br />
-                    Наращивание ресниц 2Д <br />
-                    Наращивание ресниц 3Д <br />
-                    Ботокс ресниц
-                  </div>
-                  <div class="column">
-                    500-550; время - 1-2 часа <br />
-                    600; время - 2,5 часа <br />
-                    1700; время - 2,5-3 часа<br />
-                    750; время - 1 час <br />
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -752,66 +2410,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Детские стрижки -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv5" id="desc5" />
-            <input class="log-ctrl" type="radio" name="serv5" id="price5" />
             <div class="controls">
-              <label for="desc5">Подробнее</label>
-              <label for="price5">Цены</label>
+              <a href="#modal-kids">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content5">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content5">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка детская (до10 лет)<br />
-                    Детская стрижка (машинка)<br />
-                    Детская стрижка челки
-                  </div>
-                  <div class="column">
-                    300 <br />
-                    200 <br />
-                    150
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка детская (до10 лет)<br />
-                    Детская стрижка (машинка)<br />
-                    Детская стрижка челки
-                  </div>
-                  <div class="column">
-                    150 <br />
-                    100 <br />
-                    100
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка детская (до10 лет)<br />
-                    Детская стрижка (машинка)<br />
-                    Детская стрижка челки
-                  </div>
-                  <div class="column">
-                    150 <br />
-                    100 <br />
-                    70
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -824,72 +2426,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Услуги стилиста -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv6" id="desc6" />
-            <input class="log-ctrl" type="radio" name="serv6" id="price6" />
             <div class="controls">
-              <label for="desc6">Подробнее</label>
-              <label for="price6">Цены</label>
+              <a href="#modal-stylist">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content6">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content6">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Вечерняя/свадебная прическа 1 длина<br />
-                    Вечерняя/свадебная прическа 2 длина<br />
-                    Вечерняя/свадебная прическа 3 длина<br />
-                    Вечерняя/свадебная прическа 4 длина
-                  </div>
-                  <div class="column">
-                    700 <br />
-                    800 <br />
-                    1000 <br />
-                    1300
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Вечерняя/свадебная прическа 1 длина<br />
-                    Вечерняя/свадебная прическа 2 длина<br />
-                    Вечерняя/свадебная прическа 3 длина<br />
-                    Вечерняя/свадебная прическа 4 длина
-                  </div>
-                  <div class="column">
-                    500 <br />
-                    700 <br />
-                    850 <br />
-                    1000
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Вечерняя/свадебная прическа 1 длина<br />
-                    Вечерняя/свадебная прическа 2 длина<br />
-                    Вечерняя/свадебная прическа 3 длина<br />
-                    Вечерняя/свадебная прическа 4 длина
-                  </div>
-                  <div class="column">
-                    ? <br />
-                    650-700 <br />
-                    700-850 <br />
-                    1850-1000
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -902,84 +2442,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Маникюр -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv7" id="desc7" />
-            <input class="log-ctrl" type="radio" name="serv7" id="price7" />
             <div class="controls">
-              <label for="desc7">Подробнее</label>
-              <label for="price7">Цены</label>
+              <a href="#modal-manicure">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content7">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content7">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Маникюр классический<br />
-                    Маникюр аппаратный<br />
-                    Маникюр европейский<br />
-                    Маникюр комбинированый<br />
-                    Маникюр мужской<br />
-                    Маникюр детский
-                  </div>
-                  <div class="column">
-                    250 <br />
-                    350 <br />
-                    250 <br />
-                    300 <br />
-                    300 <br />
-                    200
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Маникюр классический<br />
-                    Маникюр аппаратный<br />
-                    Маникюр европейский<br />
-                    Маникюр комбинированый<br />
-                    Маникюр мужской<br />
-                    Маникюр детский
-                  </div>
-                  <div class="column">
-                    250 <br />
-                    250 <br />
-                    150 <br />
-                    230 <br />
-                    230 <br />
-                    100-200
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Маникюр классический<br />
-                    Маникюр аппаратный<br />
-                    Маникюр европейский<br />
-                    Маникюр комбинированый<br />
-                    Маникюр мужской<br />
-                    Маникюр детский
-                  </div>
-                  <div class="column">
-                    120 <br />
-                    150 <br />
-                    80 <br />
-                    140 <br />
-                    150 <br />
-                    150
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -992,134 +2458,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Эпиляция -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv8" id="desc8" />
-            <input class="log-ctrl" type="radio" name="serv8" id="price8" />
             <div class="controls">
-              <label for="desc8">Подробнее</label>
-              <label for="price8">Цены</label>
+              <a href="#modal-epilation">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content8">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content8">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Депиляция бедер<br />
-                    Депиляция бикини<br />
-                    Депиляция глубокого бикини<br />
-                    Депиляция усиков<br />
-                    Депиляция лица<br />
-                    Депиляция подбородка <br />
-                    Депиляция шеи<br />
-                    Депиляция спины<br />
-                    Депиляция груди<br />
-                    Депиляция живота (белая линия) <br />
-                    Депиляция живота (полностью)<br />
-                    Депиляция подмышки<br />
-                    Депиляция ног до колена<br />
-                    Депиляция ног полностью<br />
-                    Депиляция ягодиц<br />
-                    Депиляция рук до локтя<br />
-                    Депиляция рук полностью
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    350 <br />
-                    500 <br />
-                    100 <br />
-                    250 <br />
-                    60 <br />
-                    100 <br />
-                    400 <br />
-                    60 <br />
-                    70 <br />
-                    200 <br />
-                    150 <br />
-                    250 <br />
-                    500 <br />
-                    200 <br />
-                    200 <br />
-                    300
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Депиляция бедер<br />
-                    Депиляция бикини<br />
-                    Депиляция глубокого бикини<br />
-                    Депиляция усиков<br />
-                    Депиляция лица<br />
-                    Депиляция подбородка <br />
-                    Депиляция шеи<br />
-                    Депиляция спины<br />
-                    Депиляция груди<br />
-                    Депиляция живота (белая линия) <br />
-                    Депиляция живота (полностью)<br />
-                    Депиляция подмышки<br />
-                    Депиляция ног до колена<br />
-                    Депиляция ног полностью<br />
-                    Депиляция ягодиц<br />
-                    Депиляция рук до локтя<br />
-                    Депиляция рук полностью
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    350 <br />
-                    500 <br />
-                    100 <br />
-                    250 <br />
-                    60 <br />
-                    100 <br />
-                    400 <br />
-                    60 <br />
-                    70 <br />
-                    200 <br />
-                    150 <br />
-                    200 <br />
-                    400 <br />
-                    150 <br />
-                    200 <br />
-                    250
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Депиляция бедер<br />
-                    Депиляция бикини<br />
-                    Депиляция глубокого бикини<br />
-                    Депиляция усиков<br />
-                    Депиляция лица<br />
-                    Депиляция подбородка <br />
-                    Депиляция шеи<br />
-                    Депиляция спины<br />
-                    Депиляция груди<br />
-                    Депиляция живота (белая линия) <br />
-                    Депиляция живота (полностью)<br />
-                    Депиляция подмышки<br />
-                    Депиляция ног до колена<br />
-                    Депиляция ног полностью<br />
-                    Депиляция ягодиц<br />
-                    Депиляция рук до локтя<br />
-                    Депиляция рук полностью
-                  </div>
-                  <div class="column">
-                    ?
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -1136,72 +2478,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="column is-mobile-reverse">
           <!-- Женские стрижки -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv9" id="desc9" />
-            <input class="log-ctrl" type="radio" name="serv9" id="price9" />
             <div class="controls">
-              <label for="desc9">Подробнее</label>
-              <label for="price9">Цены</label>
+              <a href="#modal-female-haircut">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content9">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content9">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка женская + укладка 1 длинна<br />
-                    Стрижка женская + укладка 2 длинна<br />
-                    Стрижка женская + укладка 3 длинна<br />
-                    Стрижка женская + укладка 4 длинна
-                  </div>
-                  <div class="column">
-                    500 <br />
-                    600 <br />
-                    700 <br />
-                    800
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка женская + укладка 1 длинна<br />
-                    Стрижка женская + укладка 2 длинна<br />
-                    Стрижка женская + укладка 3 длинна<br />
-                    Стрижка женская + укладка 4 длинна
-                  </div>
-                  <div class="column">
-                    400 <br />
-                    500 <br />
-                    600 <br />
-                    700
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Стрижка женская + укладка 1 длинна<br />
-                    Стрижка женская + укладка 2 длинна<br />
-                    Стрижка женская + укладка 3 длинна<br />
-                    Стрижка женская + укладка 4 длинна
-                  </div>
-                  <div class="column">
-                    300 <br />
-                    380 <br />
-                    400 <br />
-                    450
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -1214,11 +2494,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Лечение волос -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv10" id="desc10" />
-            <input class="log-ctrl" type="radio" name="serv10" id="price10" />
             <div class="controls">
-              <label for="desc10">Подробнее</label>
-              <label for="price10">Цены</label>
+                <a href="#modal-hair-healing">Подробнее</a>
             </div>
             <div class="column is-half">
               <div class="serv-content" id="desc-content10">
@@ -1247,159 +2524,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               />
             </div>
           </div>
-          <!-- Плетение кос -->
+          <!-- Депиляция -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv11" id="desc11" />
-            <input class="log-ctrl" type="radio" name="serv11" id="price11" />
             <div class="controls">
-              <label for="desc11">Подробнее</label>
-              <label for="price11">Цены</label>
+                <a href="#modal-depilation">Подробнее</a>
             </div>
             <div class="column is-half">
-              <div class="serv-content" id="desc-content11">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content11">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Простое плетение 1 длина<br />
-                    Простое плетение 2 длина<br />
-                    Простое плетение 3 длина<br />
-                    Простое плетение 4 длина<br />
-                    Сложное плетение 1 длина<br />
-                    Сложное плетение 2 длина<br />
-                    Сложное плетение 3 длина<br />
-                    Сложное плетение 4 длина<br />
-                  </div>
-                  <div class="column">
-                    100 <br />
-                    150 <br />
-                    200 <br />
-                    250 <br />
-                    150 <br />
-                    250 <br />
-                    30 <br />
-                    400
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Простое плетение 1 длина<br />
-                    Простое плетение 2 длина<br />
-                    Простое плетение 3 длина<br />
-                    Простое плетение 4 длина<br />
-                    Сложное плетение 1 длина<br />
-                    Сложное плетение 2 длина<br />
-                    Сложное плетение 3 длина<br />
-                    Сложное плетение 4 длина<br />
-                  </div>
-                  <div class="column">
-                    100 <br />
-                    150 <br />
-                    200 <br />
-                    250 <br />
-                    150 <br />
-                    250 <br />
-                    30 <br />
-                    400
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
             </div>
             <div class="column is-half">
               <img
-                class="lazy"
-                src="image/lazy/pricheski-s-kosami.jpg"
-                data-src="image/pricheski-s-kosami.jpg"
-                data-srcset="image/pricheski-s-kosami.jpg"
+                src="image/depilation.jpg"
                 alt="Пример плетения кос"
               />
             </div>
           </div>
           <!-- Брови -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv12" id="desc12" />
-            <input class="log-ctrl" type="radio" name="serv12" id="price12" />
             <div class="controls">
-              <label for="desc12">Подробнее</label>
-              <label for="price12">Цены</label>
+              <a href="#modal-eyebrows">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content12">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content12">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Коррекция и окрашивание бровей и ресниц<br />
-                    Коррекция и окрашивание бровей<br />
-                    Коррекция бровей<br />
-                    Окрашивание бровей Краска<br />
-                    Окрашивание бровей Хна
-                  </div>
-                  <div class="column">
-                    700 <br />
-                    550 <br />
-                    200 <br />
-                    350 <br />
-                    350
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Коррекция и окрашивание бровей и ресниц<br />
-                    Коррекция и окрашивание бровей<br />
-                    Коррекция бровей<br />
-                    Окрашивание бровей Краска<br />
-                    Окрашивание бровей Хна
-                  </div>
-                  <div class="column">
-                    ? <br />
-                    ? <br />
-                    100 <br />
-                    100 <br />
-                    160
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Коррекция и окрашивание бровей и ресниц<br />
-                    Коррекция и окрашивание бровей<br />
-                    Коррекция бровей<br />
-                    Окрашивание бровей Краска<br />
-                    Окрашивание бровей Хна
-                  </div>
-                  <div class="column">
-                    ? <br />
-                    ? <br />
-                    100 <br />
-                    100 <br />
-                    140
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -1412,96 +2556,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Укладка волос -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv13" id="desc13" />
-            <input class="log-ctrl" type="radio" name="serv13" id="price13" />
             <div class="controls">
-              <label for="desc13">Подробнее</label>
-              <label for="price13">Цены</label>
+              <a href="#modal-hair-styling">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content13">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content13">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Укладка Повседневная 1 длина<br />
-                    Укладка Повседневная 2 длина<br />
-                    Укладка Повседневная 3 длина<br />
-                    Укладка Повседневная 4 длина<br />
-                    Накрутка 1 длина<br />
-                    Накрутка 2 длина<br />
-                    Накрутка 3 длина<br />
-                    Накрутка 4 длина
-                  </div>
-                  <div class="column">
-                    300 <br />
-                    400 <br />
-                    500 <br />
-                    600 <br />
-                    500<br />
-                    600 <br />
-                    700 <br />
-                    800
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Укладка Повседневная 1 длина<br />
-                    Укладка Повседневная 2 длина<br />
-                    Укладка Повседневная 3 длина<br />
-                    Укладка Повседневная 4 длина<br />
-                    Накрутка 1 длина<br />
-                    Накрутка 2 длина<br />
-                    Накрутка 3 длина<br />
-                    Накрутка 4 длина
-                  </div>
-                  <div class="column">
-                    250 <br />
-                    300 <br />
-                    400 <br />
-                    500 <br />
-                    300<br />
-                    400 <br />
-                    500 <br />
-                    650
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Укладка Повседневная 1 длина<br />
-                    Укладка Повседневная 2 длина<br />
-                    Укладка Повседневная 3 длина<br />
-                    Укладка Повседневная 4 длина<br />
-                    Накрутка 1 длина<br />
-                    Накрутка 2 длина<br />
-                    Накрутка 3 длина<br />
-                    Накрутка 4 длина
-                  </div>
-                  <div class="column">
-                    200 <br />
-                    250 <br />
-                    300 <br />
-                    350 <br />
-                    ?<br />
-                    ? <br />
-                    ? <br />
-                    ?
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
                 class="lazy"
@@ -1514,24 +2572,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Окрашивание волос -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv14" id="desc14" />
-            <input class="log-ctrl" type="radio" name="serv14" id="price14" />
             <div class="controls">
-              <label for="desc14">Подробнее</label>
-              <label for="price14">Цены</label>
+                <a href="#modal-hair-coloring">Подробнее</a>
             </div>
             <div class="column is-half">
-              <div class="serv-content" id="desc-content14">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content14"></div>
             </div>
             <div class="column is-half">
               <img
@@ -1543,136 +2587,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               />
             </div>
           </div>
-          <!-- Мехенди -->
+          <!-- Массаж и уход за телом -->
           <div class="columns is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv15" id="desc15" />
-            <input class="log-ctrl" type="radio" name="serv15" id="price15" />
             <div class="controls">
-              <label for="desc15">Подробнее</label>
-              <label for="price15">Цены</label>
+              <a href="#modal-massage">Подробнее</a>
             </div>
-            <div class="column is-half">
-              <div class="serv-content" id="desc-content15">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content15">
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Роспись по телу хной простой рисунок<br />
-                    Роспись по телу хной сложный рисунок<br />
-                  </div>
-                  <div class="column">
-                    150 <br />
-                    от 300 <br />
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
-            </div>
+            <div class="column is-half"></div>
             <div class="column is-half">
               <img
-                class="lazy"
-                src="image/lazy/06-favorite_selects050.jpg"
-                data-src="image/06-favorite_selects050.jpg"
-                data-srcset="image/06-favorite_selects050.jpg"
-                alt="Пример мехенди"
+                src="image/massage.jpg"
+                alt="Пример массажа и ухода за телом"
               />
             </div>
           </div>
           <!-- Педикюр -->
           <div class="columns flex-reverse is-muliline is-mobile">
-            <input class="log-ctrl" type="radio" name="serv16" id="desc16" />
-            <input class="log-ctrl" type="radio" name="serv16" id="price16" />
             <div class="controls">
-              <label for="desc16">Подробнее</label>
-              <label for="price16">Цены</label>
+                <a href="#modal-pedicure">Подробнее</a>
             </div>
             <div class="column is-half">
-              <div class="serv-content" id="desc-content16">
-                Макияж – это искусство, требующее опыта и любви к своему делу.
-                Выполненный умелым визажистом с применением современных техник
-                нанесения, качественной косметики и профессиональных секретов он
-                способен преобразить человека, подчеркнув его достоинства и
-                естественную привлекательность. С мастерами визажа нашего салона
-                красоты клиенты находят, в первую очередь, взаимопонимание и
-                точное выполнение всех своих пожеланий. И как результат -
-                получают именно тот образ, который всегда хотели.
-              </div>
-              <div class="serv-content" id="price-content16">
-                <h5>Леси Украинки (Печерск)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Педикюр кислотой<br />
-                    Аппаратный педикюр<br />
-                    Комбинированный педикюр<br />
-                    Педикюр классический<br />
-                    Педикюр мужской<br />
-                    Педикюр детский<br />
-                    Парафинотерапия стоп
-                  </div>
-                  <div class="column">
-                    500 <br />
-                    600 <br />
-                    550 <br />
-                    500 <br />
-                    500<br />
-                    600 <br />
-                    300 <br />
-                    300
-                  </div>
-                </div>
-                <h5>Кудряшова (Соломенка)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Педикюр кислотой<br />
-                    Аппаратный педикюр<br />
-                    Комбинированный педикюр<br />
-                    Педикюр классический<br />
-                    Педикюр мужской<br />
-                    Педикюр детский<br />
-                    Парафинотерапия стоп
-                  </div>
-                  <div class="column">
-                    450 <br />
-                    650 <br />
-                    500 <br />
-                    400<br />
-                    500 <br />
-                    150 <br />
-                    200
-                  </div>
-                </div>
-                <h5>Вильямса (Теремки)</h5>
-                <div class="columns is-mobile">
-                  <div class="column">
-                    Педикюр кислотой<br />
-                    Аппаратный педикюр<br />
-                    Комбинированный педикюр<br />
-                    Педикюр классический<br />
-                    Педикюр мужской<br />
-                    Педикюр детский<br />
-                    Парафинотерапия стоп
-                  </div>
-                  <div class="column">
-                    ? <br />
-                    300 <br />
-                    ? <br />
-                    250<br />
-                    350 <br />
-                    ? <br />
-                    150
-                  </div>
-                </div>
-                <a href="#appointment">Оставить заявку</a>
-              </div>
             </div>
             <div class="column is-half">
               <img
@@ -2098,16 +3031,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 />
               </span>
             </a>
-            <a href="https://teleg.run/fashion_plus_pechersk" target="_blank" rel="noopener">
-            <span class="icon has-text-warning">
-              <img src="image/telegram.svg" alt="telegram logo" />
-            </span>
-          </a>
+            <a
+              href="https://teleg.run/fashion_plus_pechersk"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="icon has-text-warning">
+                <img src="image/telegram.svg" alt="telegram logo" />
+              </span>
+            </a>
             <a title="Viber" href="viber://add?number=38067599 11 77">
-            <span class="icon has-text-danger">
-              <img src="image/viber.svg" alt="viber logo" />
-            </span>
-          </a>
+              <span class="icon has-text-danger">
+                <img src="image/viber.svg" alt="viber logo" />
+              </span>
+            </a>
           </div>
         </div>
       </div>
