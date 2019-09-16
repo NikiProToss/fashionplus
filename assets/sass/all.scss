@@ -31,6 +31,9 @@ h1 {
   }
 }
 
+#appointment.visible {
+  background-image: url(../../image/4bde5fb9ee3399a5d365b82f04516f56.jpg);
+}
 @import "visible";
 @import "responsive";
 @import "sections/all";
