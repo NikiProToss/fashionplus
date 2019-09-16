@@ -1,14 +1,52 @@
-
 #main {
+  .modal-background {
+    filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+  }
+  .modal-content {
+    width: unset;
+    h5 {
+      font-size: 4rem;
+      margin-top: 50px;
+      font-family: philosopher;
+      color: black;
+      text-shadow: 0 0 5px white;
+      text-transform: uppercase;
+    }
+    a {
+      display: block;
+      text-transform: uppercase;
+      font-family: philosopher;
+      font-size: 2rem;
+      color: white;
+      background: #e01b1b;
+      width: max-content;
+      margin: auto;
+      margin-top: 50px;
+      padding: 10px 40px;
+      border-radius: 55px;
+    }
+    @include mobile {
+      h5 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
   &:hover .column {
     filter: brightness(0.5);
     color: transparent;
   }
   input[id^="desc"]:checked ~ .modal-card label[for^="desc"] a,
   input[id^="pics"]:checked ~ .modal-card label[for^="pics"] a,
-  input[id^="about"]:checked ~ .modal-card label[for^="about"] a
-   {
-    color: white!important;
+  input[id^="about"]:checked ~ .modal-card label[for^="about"] a {
+    color: white !important;
     border-bottom-color: white;
   }
   img {
