@@ -96,10 +96,6 @@
       transition: all 0.3s ease-out;
     }
   }
-  .tabs a {
-    border-bottom-color: black;
-    color: black;
-  }
   input[id^="desc"]:checked ~ .modal-card label[for^="desc"] a,
   input[id^="price"]:checked ~ .modal-card label[for^="price"] a {
     color: white;
@@ -150,7 +146,11 @@
 #desc15:checked ~ .modal-card #desc-content15,
 #price15:checked ~ .modal-card #price-content15,
 #desc16:checked ~ .modal-card #desc-content16,
-#price16:checked ~ .modal-card #price-content16 {
+#price16:checked ~ .modal-card #price-content16,
+#desc-main1:checked ~ .modal-card #desc-main-content1,
+#pics-main1:checked ~ .modal-card #pics-main-content1,
+#desc-main2:checked ~ .modal-card #desc-main-content2,
+#pics-main2:checked ~ .modal-card #pics-main-content2 {
   display: block;
 }
 span.icon {
