@@ -97,8 +97,9 @@
     }
   }
   input[id^="desc"]:checked ~ .modal-card label[for^="desc"] a,
-  input[id^="price"]:checked ~ .modal-card label[for^="price"] a {
-    color: white;
+  input[id^="price"]:checked ~ .modal-card label[for^="price"] a,
+  input[id^="about"]:checked ~ .modal-card label[for^="about"] a {
+    color: white!important;
     border-bottom-color: white;
   }
   @include touch {
@@ -150,7 +151,8 @@
 #desc-main1:checked ~ .modal-card #desc-main-content1,
 #pics-main1:checked ~ .modal-card #pics-main-content1,
 #desc-main2:checked ~ .modal-card #desc-main-content2,
-#pics-main2:checked ~ .modal-card #pics-main-content2 {
+#pics-main2:checked ~ .modal-card #pics-main-content2,
+#about-main2:checked ~ .modal-card #about-main-content2 {
   display: block;
 }
 span.icon {

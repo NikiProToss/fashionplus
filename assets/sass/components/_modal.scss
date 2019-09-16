@@ -13,6 +13,9 @@
     opacity: 1;
     pointer-events: auto;
   }
+  input {
+    display: none;
+  }
 }
 .tabs ul {
   border-color: #635f5f;
@@ -89,5 +92,5 @@ footer a {
 
 .tabs a {
   border-bottom-color: black;
-  color: black;
+  color: black!important;
 }

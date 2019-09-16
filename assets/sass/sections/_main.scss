@@ -5,8 +5,10 @@
     color: transparent;
   }
   input[id^="desc"]:checked ~ .modal-card label[for^="desc"] a,
-  input[id^="pics"]:checked ~ .modal-card label[for^="pics"] a {
-    color: white;
+  input[id^="pics"]:checked ~ .modal-card label[for^="pics"] a,
+  input[id^="about"]:checked ~ .modal-card label[for^="about"] a
+   {
+    color: white!important;
     border-bottom-color: white;
   }
   img {
